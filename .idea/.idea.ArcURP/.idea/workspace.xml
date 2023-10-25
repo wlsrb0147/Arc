@@ -7,16 +7,9 @@
     <list default="true" id="0ec43064-8ed8-4326-9813-392b95e1259a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/BT_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/BT_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/Common items.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/Common items.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceEventTriggerScr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceEventTriggerScr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquipedItem.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquipedItem.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/InventoryManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/InventoryManager.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs.meta" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/UI_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/UI_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor/Scenes/Sections.Map/9fc0d4010bbf28b4594072e72b8655ab.userdata" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/RiderFlow.UserData/Editor/Scenes/Sections.Map/9fc0d4010bbf28b4594072e72b8655ab.userdata" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -169,7 +162,7 @@
       <workItem from="1697602512226" duration="54551000" />
       <workItem from="1698020387683" duration="38744000" />
       <workItem from="1698203295421" duration="621000" />
-      <workItem from="1698207788114" duration="7150000" />
+      <workItem from="1698207788114" duration="18755000" />
     </task>
     <servers />
   </component>

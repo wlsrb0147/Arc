@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,13 +8,44 @@ namespace MyFolder.Script.InventoryScript
     {
         private int _itemType;
         private int _characterType;
+        private bool _equiped = false;
+        private float _time;
+        private float _currentTime;
+
+        private ItemDatabase _db;
+        private ItemManager _manager;
+        private Items item;
         
+        private void Awake()
+        {
+            _db = GameObject.FindWithTag("DB").GetComponent<ItemDatabase>();
+            _manager = GameObject.FindWithTag("Inven").GetComponent<ItemManager>();
+        }
+
+        private void Start()
+        {
+            item = _db.FindItemByName(gameObject.name);
+        }
+
         public void OnPointerClick(PointerEventData eventData)
         {
+            
+            _currentTime = Time.unscaledTime;
+            float deltaTime = _currentTime - _time;
+            
+            
             if (eventData.button == PointerEventData.InputButton.Left)
             {
-                Inventory.selectInventoryItem = gameObject.name;
+                if (Inventory.selectInventoryItem == item.name && deltaTime < 1f )
+                {
+                    _manager.DeleteItem(item);
+                }
+                else
+                {
+                    Inventory.selectInventoryItem = item.name;   
+                }
             }
+            _time = Time.unscaledTime;
         }
     }
 }

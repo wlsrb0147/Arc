@@ -35,7 +35,7 @@ namespace MyFolder.Script.InventoryScript
             {
                 items.quantity--;
             }
-
+            
             if (items.quantity <= 0)
             {
                 inventoryItemsList.Remove(items);
@@ -44,7 +44,7 @@ namespace MyFolder.Script.InventoryScript
             UpdateInventoryUI(content); // 인벤토리 UI 업데이트
             UpdateInventoryUI(content2);
         }
-        
+
         
         private void UpdateInventoryUI(Transform contents) // 이건 획득순 정렬
         {
