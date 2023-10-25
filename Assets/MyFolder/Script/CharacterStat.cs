@@ -1,22 +1,21 @@
-﻿using Unity.VisualScripting;
-
-namespace MyFolder.Script
+﻿namespace MyFolder.Script
 {
     public class CharacterStat
     {
-        public CharacterStat(string name, CharacterType type)
+        public CharacterStat(string name, CharacterType type,int str, int intel, int vit, int agi, int luk)
         {
             Name = name;
             Type = type;
+            charBase.Initialize(str, intel, vit, agi, luk);
         }
         
         public string Name { get; private set; }
         public CharacterType Type { get; private set; }
+        public Attribute charBase = new();
         
-        public Stat hp = new Stat();
-        public Stat mp = new Stat();
-        public Stat exp = new Stat();
-        public Attribute charBase = new Attribute();
+        public Stat hp = new ();
+        public Stat mp = new ();
+        public Stat exp = new ();
     
         public int Level { get; private set; } = 1;
     

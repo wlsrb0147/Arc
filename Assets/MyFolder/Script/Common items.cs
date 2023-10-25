@@ -12,5 +12,15 @@ public class Attribute
     public int Vit; // 방어력
     public int Agi; // 스피드
     public int Luk; // 행운
-}
 
+    public void Initialize(int str, int intelligence, int vit, int agi, int luk)
+    {
+        Str = str;
+        Int = intelligence;
+        Vit = vit;
+        Agi = agi;
+        Luk = luk;
+    }
+
+    
+}

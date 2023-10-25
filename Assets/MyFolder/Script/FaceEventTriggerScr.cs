@@ -29,6 +29,7 @@ namespace MyFolder.Script
             if (!characterUsing && !Inventory.notUsing.Contains(transform))
             {
                 Inventory.notUsing.Add(transform);
+                transform.SetParent(tab15Parent);
             }
 
             if (Inventory.notUsing.Count != 0)

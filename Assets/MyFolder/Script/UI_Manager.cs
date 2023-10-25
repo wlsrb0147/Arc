@@ -19,6 +19,8 @@ namespace MyFolder.Script
         public GameObject[] tTabPanels;
 
         public Image[] inventoryContents;
+
+        public Text[] tab11Text;
     
         public GameObject[] faceBox;
         public Image[] faceInBox;
@@ -36,7 +38,7 @@ namespace MyFolder.Script
 
         public Text charactersState;
         public Text notUsingName;
-    
+        
         public static int leaderNum;
         public static string selectEquipedItem;
         public static string selectFaceName;
@@ -89,6 +91,7 @@ namespace MyFolder.Script
         private Dictionary<int, Image> bckGround = new();
         private Dictionary<string, Color> colorSet = new();
         private Dictionary<string, string> nameChange = new();
+        private Dictionary<string, CharacterStat> stats = new();
         #endregion
     
         private int expireTab;
@@ -112,11 +115,6 @@ namespace MyFolder.Script
 
         void Start()
         {
-            for (int i = 0; i < Inventory.notUsing.Count; i++)
-            {
-                Debug.Log(Inventory.notUsing[i]);
-            }
-        
             field.fieldPanel.SetActive(true);
             inven.invenPanel.SetActive(false);
             battle.battlePanel.SetActive(false);
@@ -229,14 +227,24 @@ namespace MyFolder.Script
             Equipments.Add("AiBox",inven.equipmentSpr[0]);
             Equipments.Add("CarrotBox",inven.equipmentSpr[1]);
             Equipments.Add("CellineBox",inven.equipmentSpr[2]);
-            Equipments.Add("EludardBox",inven.equipmentSpr[3]);
+            Equipments.Add("EluardBox",inven.equipmentSpr[3]);
             Equipments.Add("KreutzerBox",inven.equipmentSpr[4]);
             Equipments.Add("MariaBox",inven.equipmentSpr[5]);
             Equipments.Add("PeachBox",inven.equipmentSpr[6]);
             Equipments.Add("SizzBox",inven.equipmentSpr[7]);
             Equipments.Add("TenziBox",inven.equipmentSpr[8]);
         
-        
+            stats.Add("AiBox",CharacterManager.instance.info[0]);
+            stats.Add("CarrotBox",CharacterManager.instance.info[1]);
+            stats.Add("CellineBox",CharacterManager.instance.info[2]);
+            stats.Add("EluardBox",CharacterManager.instance.info[3]);
+            stats.Add("KreutzerBox",CharacterManager.instance.info[4]);
+            stats.Add("MariaBox",CharacterManager.instance.info[5]);
+            stats.Add("PeachBox",CharacterManager.instance.info[6]);
+            stats.Add("SizzBox",CharacterManager.instance.info[7]);
+            stats.Add("TenziBox",CharacterManager.instance.info[8]);
+            
+            
             #endregion
         
         }
@@ -245,8 +253,6 @@ namespace MyFolder.Script
     
         void Update()
         {
-            Debug.Log(Inventory.selectEquipedItem);
-            Debug.Log(Inventory.selectInventoryItem);
             // 배틀중에는 인벤 사용불가
             if (Input.GetKeyDown(KeyCode.I) && isBattleActive == false) 
             {
@@ -322,12 +328,18 @@ namespace MyFolder.Script
             if (selectedLeftButton + selectedTopButton == 11)
             {
                 inven.inventoryContents[0].sprite = Status[Inventory.selectFaceName];
+                ChangeTab11Stat();
             }
 
             if (selectedLeftButton + selectedTopButton == 12)
             {
-                inven.charactersState.text = nameChange[Inventory.selectFaceName]+"의 상태";
+                
                 inven.eqipmentImg.sprite = Equipments[Inventory.selectFaceName];
+            }
+
+            if (selectedLeftButton + selectedTopButton == 13)
+            {
+                inven.charactersState.text = nameChange[Inventory.selectFaceName] + "의 상태";
             }
 
             if (selectedLeftButton + selectedTopButton == 15)
@@ -371,5 +383,25 @@ namespace MyFolder.Script
         
         }
 
+        // 레벨, 경험치/맥스경험치, 아머/맥스아머, hp/maxhp, 힘민능스피드럭 , 공방마법스피드크리
+        void ChangeTab11Stat()
+        {
+            inven.tab11Text[0].text = stats[Inventory.selectFaceName].Level.ToString();
+            inven.tab11Text[1].text = stats[Inventory.selectFaceName].exp.Value + "/" +
+                                      stats[Inventory.selectFaceName].exp.MaxValue;
+            inven.tab11Text[2].text = stats[Inventory.selectFaceName].Bar.ToString();
+            inven.tab11Text[3].text = stats[Inventory.selectFaceName].hp.Value + "/" +
+                                      stats[Inventory.selectFaceName].hp.MaxValue;
+            inven.tab11Text[4].text = stats[Inventory.selectFaceName].charBase.Str.ToString();
+            inven.tab11Text[5].text = stats[Inventory.selectFaceName].charBase.Vit.ToString();
+            inven.tab11Text[6].text = stats[Inventory.selectFaceName].charBase.Int.ToString();
+            inven.tab11Text[7].text = stats[Inventory.selectFaceName].charBase.Agi.ToString();
+            inven.tab11Text[8].text = stats[Inventory.selectFaceName].charBase.Luk.ToString();
+            inven.tab11Text[9].text = stats[Inventory.selectFaceName].Atk.ToString();
+            inven.tab11Text[10].text = stats[Inventory.selectFaceName].Def.ToString();
+            inven.tab11Text[11].text = stats[Inventory.selectFaceName].Mag.ToString();
+            inven.tab11Text[12].text = stats[Inventory.selectFaceName].Spd.ToString();
+            inven.tab11Text[13].text = stats[Inventory.selectFaceName].Cri.ToString();
+        }
     }
 }
