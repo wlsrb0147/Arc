@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
+  m_Name: Ringofdead
+  m_EditorClassIdentifier: 
+  itemType: 64
+  allowedCharacterType: 114
+  ItemName: "\uB9DD\uC790\uC758 \uBC18\uC9C0"
+  ItemNameText: {fileID: 0}
+  ItemImage: {fileID: 0}
+  ItemIcon: {fileID: 21300000, guid: 6bd25fef722651c469128277f5da73c4, type: 3}
+  barrier: 18
+  attribute:
+    Str: 50
+    Int: -10
+    Vit: 80
+    Agi: -5
+    Luk: -10

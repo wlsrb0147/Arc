@@ -1,0 +1,1156 @@
+fileFormatVersion: 2
+guid: 5e7f46e6abba1e84fa8948af02feff83
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 450
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Cellin_0
+      rect:
+        serializedVersion: 2
+        x: 158
+        y: 3050
+        width: 142
+        height: 379
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf896d1dd3806b049b469536fbd02e5f
+      internalID: -1460405109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_1
+      rect:
+        serializedVersion: 2
+        x: 445
+        y: 3050
+        width: 234
+        height: 361
+      alignment: 9
+      pivot: {x: 0.7018965, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b10edf29704abeb4b8d165912d0a11e5
+      internalID: -662858619
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_2
+      rect:
+        serializedVersion: 2
+        x: 833
+        y: 3050
+        width: 221
+        height: 341
+      alignment: 9
+      pivot: {x: 0.63233554, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe87c5250396b1d4f98272925d9a2b2d
+      internalID: -1508978019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_3
+      rect:
+        serializedVersion: 2
+        x: 1185
+        y: 3050
+        width: 241
+        height: 347
+      alignment: 9
+      pivot: {x: 0.3226374, y: -0.0064834463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c457dead4b983934f952a5743a3e21a9
+      internalID: 215210440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_4
+      rect:
+        serializedVersion: 2
+        x: 1577
+        y: 3050
+        width: 229
+        height: 357
+      alignment: 9
+      pivot: {x: 0.36246353, y: -0.006301837}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644a951e685d6d14fb8149c88517c7ed
+      internalID: 1955397427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_5
+      rect:
+        serializedVersion: 2
+        x: 1973
+        y: 3050
+        width: 246
+        height: 359
+      alignment: 9
+      pivot: {x: 0.36282274, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1694be39fb909ee4189053e6481fb243
+      internalID: 1416335659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_6
+      rect:
+        serializedVersion: 2
+        x: 2368
+        y: 3050
+        width: 234
+        height: 347
+      alignment: 9
+      pivot: {x: 0.40385866, y: -0.0064834463}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffa4aab2a7c3646459a4ea6bd7e77e32
+      internalID: -21304675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_7
+      rect:
+        serializedVersion: 2
+        x: 2737
+        y: 3050
+        width: 234
+        height: 347
+      alignment: 9
+      pivot: {x: 0.70189595, y: 0.0064827427}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 169a90789bd9a8a4ca33297f4cb93d5d
+      internalID: 1484867980
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_8
+      rect:
+        serializedVersion: 2
+        x: 3146
+        y: 3052
+        width: 212
+        height: 359
+      alignment: 9
+      pivot: {x: 0.6697883, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc097864ad1c8be4e912c259ed596f39
+      internalID: -1518615637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_9
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 2609
+        width: 150
+        height: 371
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05c3d5f9b8881cf48be8aee37530f9d4
+      internalID: 1137626988
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_10
+      rect:
+        serializedVersion: 2
+        x: 455
+        y: 2609
+        width: 212
+        height: 360
+      alignment: 9
+      pivot: {x: 0.3332194, y: 0.03437568}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c38338f8d76c55c4ba9ad2fa845ea731
+      internalID: -1771032874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_11
+      rect:
+        serializedVersion: 2
+        x: 843
+        y: 2609
+        width: 200
+        height: 332
+      alignment: 9
+      pivot: {x: 0.31437346, y: 0.0000007353633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 67d3acb5c0a4ab444a380937c6273dfc
+      internalID: -1494744454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_12
+      rect:
+        serializedVersion: 2
+        x: 1201
+        y: 2609
+        width: 211
+        height: 332
+      alignment: 9
+      pivot: {x: 0.28215772, y: 0.0000007353633}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 842cd8170d15db54c8f1be1b7eeff651
+      internalID: 931958883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_13
+      rect:
+        serializedVersion: 2
+        x: 1578
+        y: 2609
+        width: 224
+        height: 332
+      alignment: 9
+      pivot: {x: 0.3263697, y: -0.010649532}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87536538a4a44ac40aa5f618fcffaf8a
+      internalID: 1869491149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_14
+      rect:
+        serializedVersion: 2
+        x: 1990
+        y: 2609
+        width: 212
+        height: 359
+      alignment: 9
+      pivot: {x: 0.3082022, y: 0.06894287}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b9b2320dc46cca4e9146fd9bbb535e7
+      internalID: -1997379744
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_15
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 2609
+        width: 217
+        height: 347
+      alignment: 9
+      pivot: {x: 0.29632822, y: 0.035663527}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6621d9841b5024a82b70e08a119029
+      internalID: 374494632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_16
+      rect:
+        serializedVersion: 2
+        x: 2732
+        y: 2609
+        width: 229
+        height: 336
+      alignment: 9
+      pivot: {x: 0.2761209, y: 0.026308332}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 841c8df92e7f73049869c1d5699817b3
+      internalID: -1578445095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_17
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 2609
+        width: 249
+        height: 330
+      alignment: 9
+      pivot: {x: 0.3580033, y: 0.00000073982005}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1725b06a2c770534499fd99b411caa80
+      internalID: 1807736623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_18
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 2205
+        width: 125
+        height: 361
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b9a6cc2c70a97e409eaf9730bf71bc6
+      internalID: 853775992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_19
+      rect:
+        serializedVersion: 2
+        x: 437
+        y: 2205
+        width: 249
+        height: 342
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70f6df646d917ef46842d1dc270ec3c9
+      internalID: -1319036143
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_20
+      rect:
+        serializedVersion: 2
+        x: 837
+        y: 2205
+        width: 193
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cba42b02dc5cf69449f178c7154e3093
+      internalID: -594899628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_21
+      rect:
+        serializedVersion: 2
+        x: 1187
+        y: 2205
+        width: 237
+        height: 342
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b22797b98e1525469c2d0cb982de599
+      internalID: -1840247357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_22
+      rect:
+        serializedVersion: 2
+        x: 1558
+        y: 2205
+        width: 266
+        height: 341
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a989505b012f4d34885506b58837ffe3
+      internalID: -1642163294
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_23
+      rect:
+        serializedVersion: 2
+        x: 1971
+        y: 2205
+        width: 250
+        height: 342
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0489474c18ff52e4a956466db7aa7f5f
+      internalID: 1516893456
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_24
+      rect:
+        serializedVersion: 2
+        x: 2376
+        y: 2205
+        width: 205
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f296042635d3b6f4db505fa0d39152cc
+      internalID: -224841388
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_25
+      rect:
+        serializedVersion: 2
+        x: 2725
+        y: 2205
+        width: 255
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f778e2c50012698408819ace7409aef7
+      internalID: 508347564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_26
+      rect:
+        serializedVersion: 2
+        x: 3115
+        y: 2205
+        width: 270
+        height: 334
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136a73869c857734bb9cef008d638739
+      internalID: 1414308555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_27
+      rect:
+        serializedVersion: 2
+        x: 185
+        y: 1758
+        width: 130
+        height: 369
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d2318fb81a4764d96aa9f8b11dde69
+      internalID: -1474579419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_28
+      rect:
+        serializedVersion: 2
+        x: 476
+        y: 1758
+        width: 193
+        height: 348
+      alignment: 9
+      pivot: {x: 0.32417417, y: 0.07607576}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d29bde4fbfc9f34eafd52ffa7510023
+      internalID: -21099818
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_29
+      rect:
+        serializedVersion: 2
+        x: 835
+        y: 1758
+        width: 188
+        height: 328
+      alignment: 9
+      pivot: {x: 0.45298216, y: 0.043052487}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dd89b5f5fb2d5c4d83e736f1bad1f66
+      internalID: -2016206875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_30
+      rect:
+        serializedVersion: 2
+        x: 1191
+        y: 1758
+        width: 217
+        height: 330
+      alignment: 9
+      pivot: {x: 0.42919978, y: 0.025225276}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d3fbb1365fb3954698011cca1addc32
+      internalID: 523623074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_31
+      rect:
+        serializedVersion: 2
+        x: 1571
+        y: 1758
+        width: 217
+        height: 331
+      alignment: 9
+      pivot: {x: 0.37217158, y: 0.01990373}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ddef6b9d25fb354889c7ddc1b7c3a49
+      internalID: 322600200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_32
+      rect:
+        serializedVersion: 2
+        x: 1954
+        y: 1758
+        width: 234
+        height: 333
+      alignment: 9
+      pivot: {x: 0.36364746, y: 0.045306783}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddbbd784f12ec344e8b3ff2d94701324
+      internalID: 603349289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_33
+      rect:
+        serializedVersion: 2
+        x: 2357
+        y: 1758
+        width: 200
+        height: 335
+      alignment: 9
+      pivot: {x: 0.34046876, y: 0.050314102}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e599bc53c841c2945b68d9d39b282143
+      internalID: -1668581326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_34
+      rect:
+        serializedVersion: 2
+        x: 2720
+        y: 1758
+        width: 224
+        height: 324
+      alignment: 9
+      pivot: {x: 0.41005817, y: 0.031606793}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f5879431da802740badbb01996c716e
+      internalID: -339557868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_35
+      rect:
+        serializedVersion: 2
+        x: 3110
+        y: 1758
+        width: 211
+        height: 308
+      alignment: 9
+      pivot: {x: 0.3860731, y: 0.009170731}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8dcf351943f09aa4d94ef3f19ad29e97
+      internalID: -1926631964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_36
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1312
+        width: 146
+        height: 359
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df9fe070f1872ae4b8bc68065a810632
+      internalID: 1643781476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_37
+      rect:
+        serializedVersion: 2
+        x: 481
+        y: 1312
+        width: 174
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc4c892034de8b846ba379f81b0cfc48
+      internalID: 2056858319
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_38
+      rect:
+        serializedVersion: 2
+        x: 862
+        y: 1312
+        width: 163
+        height: 328
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 996edc239bf84214fa2f512754fb393a
+      internalID: 1937116866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_39
+      rect:
+        serializedVersion: 2
+        x: 1221
+        y: 1312
+        width: 169
+        height: 328
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 80c6a5154316da748b15beb4dba91933
+      internalID: 1727247289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_40
+      rect:
+        serializedVersion: 2
+        x: 1606
+        y: 1312
+        width: 170
+        height: 326
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a44a3767c063d4399afff94f6bf696
+      internalID: 1516679360
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_41
+      rect:
+        serializedVersion: 2
+        x: 2011
+        y: 1312
+        width: 170
+        height: 329
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4c11a412b645e14aa595c3106cd438a
+      internalID: -1971646100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_42
+      rect:
+        serializedVersion: 2
+        x: 2405
+        y: 1312
+        width: 163
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da9056bc42fd64248a5df05190ed8d23
+      internalID: -1408813660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_43
+      rect:
+        serializedVersion: 2
+        x: 2771
+        y: 1312
+        width: 174
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7489b7b678f653446ab2f6d352c35974
+      internalID: 1110091751
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Cellin_44
+      rect:
+        serializedVersion: 2
+        x: 3171
+        y: 1312
+        width: 159
+        height: 335
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52ca7ce87a8161e4d8ad77a4e166d52d
+      internalID: -367812807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: e2a44a3adc8225543bf04d6a63f9cd95
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Cellin_0: -1460405109
+      Cellin_1: -662858619
+      Cellin_10: -1771032874
+      Cellin_11: -1494744454
+      Cellin_12: 931958883
+      Cellin_13: 1869491149
+      Cellin_14: -1997379744
+      Cellin_15: 374494632
+      Cellin_16: -1578445095
+      Cellin_17: 1807736623
+      Cellin_18: 853775992
+      Cellin_19: -1319036143
+      Cellin_2: -1508978019
+      Cellin_20: -594899628
+      Cellin_21: -1840247357
+      Cellin_22: -1642163294
+      Cellin_23: 1516893456
+      Cellin_24: -224841388
+      Cellin_25: 508347564
+      Cellin_26: 1414308555
+      Cellin_27: -1474579419
+      Cellin_28: -21099818
+      Cellin_29: -2016206875
+      Cellin_3: 215210440
+      Cellin_30: 523623074
+      Cellin_31: 322600200
+      Cellin_32: 603349289
+      Cellin_33: -1668581326
+      Cellin_34: -339557868
+      Cellin_35: -1926631964
+      Cellin_36: 1643781476
+      Cellin_37: 2056858319
+      Cellin_38: 1937116866
+      Cellin_39: 1727247289
+      Cellin_4: 1955397427
+      Cellin_40: 1516679360
+      Cellin_41: -1971646100
+      Cellin_42: -1408813660
+      Cellin_43: 1110091751
+      Cellin_44: -367812807
+      Cellin_5: 1416335659
+      Cellin_6: -21304675
+      Cellin_7: 1484867980
+      Cellin_8: -1518615637
+      Cellin_9: 1137626988
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

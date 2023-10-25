@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
+  m_Name: bopalblade__
+  m_EditorClassIdentifier: 
+  itemType: 4
+  allowedCharacterType: 243
+  ItemName: "\uC544\uB860\uB2E4\uC774\uD2B8"
+  ItemNameText: {fileID: 0}
+  ItemImage: {fileID: 0}
+  ItemIcon: {fileID: 21300000, guid: 053552a063028454a8255cd8653d9a55, type: 3}
+  barrier: 5
+  attribute:
+    Str: 6
+    Int: 7
+    Vit: 8
+    Agi: 9
+    Luk: 10

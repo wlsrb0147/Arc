@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
+  m_Name: chaos_shld
+  m_EditorClassIdentifier: 
+  itemType: 8
+  allowedCharacterType: 185
+  ItemName: "\uCE74\uC624\uC2A4 \uC2E4\uB4DC"
+  ItemNameText: {fileID: 0}
+  ItemImage: {fileID: 0}
+  ItemIcon: {fileID: 21300000, guid: fef53884fd1e1504b86f95cd09c22d89, type: 3}
+  barrier: 150
+  attribute:
+    Str: 60
+    Int: 66
+    Vit: 20
+    Agi: 43
+    Luk: 50

@@ -1,0 +1,1156 @@
+fileFormatVersion: 2
+guid: 4fa1aceab6c24304aabd1f3da8f96e46
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 450
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Kreutzer_0
+      rect:
+        serializedVersion: 2
+        x: 146
+        y: 2974
+        width: 184
+        height: 393
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29bc359163ccf9c4a8e23e357b72ffb4
+      internalID: 495339609
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_1
+      rect:
+        serializedVersion: 2
+        x: 469
+        y: 2974
+        width: 250
+        height: 382
+      alignment: 9
+      pivot: {x: 0.37069264, y: -0.004230919}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a469ccbf31d18a4d8a08890075ee33c
+      internalID: -617708525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_2
+      rect:
+        serializedVersion: 2
+        x: 859
+        y: 2974
+        width: 234
+        height: 388
+      alignment: 9
+      pivot: {x: 0.4171106, y: -0.004165492}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 887d93b3821779f40b39bc0cc07ed690
+      internalID: -2029736772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_3
+      rect:
+        serializedVersion: 2
+        x: 1232
+        y: 2974
+        width: 250
+        height: 384
+      alignment: 9
+      pivot: {x: 0.3577617, y: -0.004208883}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e971e300cc1f798448181b3e990af8eb
+      internalID: -489046377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_4
+      rect:
+        serializedVersion: 2
+        x: 1621
+        y: 2974
+        width: 225
+        height: 375
+      alignment: 9
+      pivot: {x: 0.40661132, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5e937d1a7b0a6b46a9df018efb285c9
+      internalID: -516279076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_5
+      rect:
+        serializedVersion: 2
+        x: 1985
+        y: 2974
+        width: 254
+        height: 380
+      alignment: 9
+      pivot: {x: 0.6845424, y: 0.0042538294}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b79418a917540144781095b715f697d9
+      internalID: -135221524
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_6
+      rect:
+        serializedVersion: 2
+        x: 2379
+        y: 2974
+        width: 238
+        height: 388
+      alignment: 9
+      pivot: {x: 0.60187024, y: 0.008331614}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ab696e54d9385346bc81d8365c65567
+      internalID: -1374117363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_7
+      rect:
+        serializedVersion: 2
+        x: 2756
+        y: 2974
+        width: 238
+        height: 380
+      alignment: 9
+      pivot: {x: 0.6884673, y: -0.0031063682}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b83cd58c7758874dbe257130903b1f2
+      internalID: 189501652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_8
+      rect:
+        serializedVersion: 2
+        x: 3133
+        y: 2974
+        width: 230
+        height: 371
+      alignment: 9
+      pivot: {x: 0.6129076, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce89bb302c7c94240a84a7c350b5c374
+      internalID: 1624793803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_9
+      rect:
+        serializedVersion: 2
+        x: 161
+        y: 2479
+        width: 154
+        height: 376
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ee79736ce0df0f429c87fcbec516515
+      internalID: -1542193443
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_10
+      rect:
+        serializedVersion: 2
+        x: 429
+        y: 2479
+        width: 238
+        height: 357
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3100794095b35654fbcf936f6aff68f2
+      internalID: -1943543309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_11
+      rect:
+        serializedVersion: 2
+        x: 782
+        y: 2479
+        width: 246
+        height: 358
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86eea50da5108884e97212569dbe4203
+      internalID: 529068605
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_12
+      rect:
+        serializedVersion: 2
+        x: 1142
+        y: 2479
+        width: 238
+        height: 362
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 257c378bb2171d04999c18ee87de61de
+      internalID: 2109565308
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_13
+      rect:
+        serializedVersion: 2
+        x: 1494
+        y: 2479
+        width: 234
+        height: 354
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35504663d001209499966df14804f74c
+      internalID: 1653305579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_14
+      rect:
+        serializedVersion: 2
+        x: 1842
+        y: 2479
+        width: 325
+        height: 348
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 246d594f93fe18446b176144ec69128e
+      internalID: 21472819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_15
+      rect:
+        serializedVersion: 2
+        x: 2298
+        y: 2479
+        width: 280
+        height: 331
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9e9a5ef3369fc5418511bf4e08506f3
+      internalID: 2115890724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_16
+      rect:
+        serializedVersion: 2
+        x: 2688
+        y: 2479
+        width: 230
+        height: 351
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a56927c687c71964ca868d27edc4424e
+      internalID: 546857768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_17
+      rect:
+        serializedVersion: 2
+        x: 3140
+        y: 2479
+        width: 216
+        height: 360
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3c7c637ac137ac44b0e02d804af85b1
+      internalID: 2086262066
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_18
+      rect:
+        serializedVersion: 2
+        x: 173
+        y: 1995
+        width: 130
+        height: 372
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7d7a2bbaa3e0b148a8eac5e7663985b
+      internalID: -2056166910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_19
+      rect:
+        serializedVersion: 2
+        x: 413
+        y: 1995
+        width: 300
+        height: 365
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9be7d74864e1c194ebe3b2ecba7c1625
+      internalID: -1380045810
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_20
+      rect:
+        serializedVersion: 2
+        x: 824
+        y: 1995
+        width: 346
+        height: 342
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851567e8e1586f8418ba9a4ba9823d07
+      internalID: 1460373753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_21
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 1995
+        width: 304
+        height: 360
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9698fec6742d6d048832a2932e4e15f2
+      internalID: -1420854632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_22
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1995
+        width: 241
+        height: 362
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83b594b7e2bc1e5478fc7c934f3a3e04
+      internalID: -1575690799
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_23
+      rect:
+        serializedVersion: 2
+        x: 2042
+        y: 1995
+        width: 250
+        height: 349
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ecafcf3e791b44f94536ed0e90c09d
+      internalID: 1986832643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_24
+      rect:
+        serializedVersion: 2
+        x: 2335
+        y: 1995
+        width: 346
+        height: 342
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7285f14baeb38694c9c8ed8a25852921
+      internalID: -1431691361
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_25
+      rect:
+        serializedVersion: 2
+        x: 2795
+        y: 1995
+        width: 284
+        height: 370
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c8d7831e79161944936987e72ea9057
+      internalID: 878214757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_26
+      rect:
+        serializedVersion: 2
+        x: 3125
+        y: 1995
+        width: 238
+        height: 372
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363fb2a61415a254cb58b13951f636b7
+      internalID: -1319740897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_27
+      rect:
+        serializedVersion: 2
+        x: 159
+        y: 1518
+        width: 158
+        height: 387
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89cfeed279d21494bbeb2a5d1a33b14d
+      internalID: -990318631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_28
+      rect:
+        serializedVersion: 2
+        x: 491
+        y: 1518
+        width: 204
+        height: 367
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24d5aeb88a7c38c428065e808ef76520
+      internalID: -1946974528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_29
+      rect:
+        serializedVersion: 2
+        x: 869
+        y: 1518
+        width: 242
+        height: 358
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3335ad227dda648418968664565938e8
+      internalID: -85920600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_30
+      rect:
+        serializedVersion: 2
+        x: 1285
+        y: 1518
+        width: 212
+        height: 367
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1d9cc9452058a54eaccf1def0b5f98f
+      internalID: -1524440221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_31
+      rect:
+        serializedVersion: 2
+        x: 1671
+        y: 1518
+        width: 175
+        height: 353
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62a7bd8611f36eb4c9cd389e5b08aef1
+      internalID: -1402210282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_32
+      rect:
+        serializedVersion: 2
+        x: 2019
+        y: 1518
+        width: 196
+        height: 353
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: deb5a531443634749a936d569c76ab17
+      internalID: 1375908233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_33
+      rect:
+        serializedVersion: 2
+        x: 2389
+        y: 1518
+        width: 220
+        height: 355
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5180e696fba8d74bb8bb5ef2c2b88db
+      internalID: -1017676976
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_34
+      rect:
+        serializedVersion: 2
+        x: 2783
+        y: 1518
+        width: 204
+        height: 363
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf4c1089d0a66a04586ddf65ecdbc5da
+      internalID: -1124549491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_35
+      rect:
+        serializedVersion: 2
+        x: 3161
+        y: 1518
+        width: 175
+        height: 373
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d60d0ea985fa954cbbb2e031801d15a
+      internalID: 652560574
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_36
+      rect:
+        serializedVersion: 2
+        x: 155
+        y: 1040
+        width: 166
+        height: 395
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8d34c5a270699d478e92c2c460f43f8
+      internalID: -472945607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_37
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 1040
+        width: 170
+        height: 393
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d03762c7491b1f949b12f9710f5e86da
+      internalID: 506393552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_38
+      rect:
+        serializedVersion: 2
+        x: 905
+        y: 1040
+        width: 184
+        height: 377
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 226a47c4934bb3842aaddfbaa7acd30d
+      internalID: -161665221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_39
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 1040
+        width: 175
+        height: 394
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f247e452ec23f924ca73d682a60a93ad
+      internalID: -752301877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_40
+      rect:
+        serializedVersion: 2
+        x: 1678
+        y: 1040
+        width: 162
+        height: 403
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f41564e327dc8745a940748e8713819
+      internalID: 773442759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_41
+      rect:
+        serializedVersion: 2
+        x: 2047
+        y: 1040
+        width: 162
+        height: 394
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4896d503840b647b2d853b9d06da33
+      internalID: 1834608154
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_42
+      rect:
+        serializedVersion: 2
+        x: 2416
+        y: 1040
+        width: 175
+        height: 379
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcdeb8df0cac84348a68331ee7dff436
+      internalID: -1556663171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_43
+      rect:
+        serializedVersion: 2
+        x: 2798
+        y: 1040
+        width: 162
+        height: 387
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96cba7dc290f6d94b9cb1071defcce7e
+      internalID: 1971249517
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Kreutzer_44
+      rect:
+        serializedVersion: 2
+        x: 3167
+        y: 1040
+        width: 162
+        height: 401
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 817515500f4d35b449e09eb58587693c
+      internalID: 1369411540
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 39cab9498f1401043810d2a5c3e096e1
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Kreutzer_0: 495339609
+      Kreutzer_1: -617708525
+      Kreutzer_10: -1943543309
+      Kreutzer_11: 529068605
+      Kreutzer_12: 2109565308
+      Kreutzer_13: 1653305579
+      Kreutzer_14: 21472819
+      Kreutzer_15: 2115890724
+      Kreutzer_16: 546857768
+      Kreutzer_17: 2086262066
+      Kreutzer_18: -2056166910
+      Kreutzer_19: -1380045810
+      Kreutzer_2: -2029736772
+      Kreutzer_20: 1460373753
+      Kreutzer_21: -1420854632
+      Kreutzer_22: -1575690799
+      Kreutzer_23: 1986832643
+      Kreutzer_24: -1431691361
+      Kreutzer_25: 878214757
+      Kreutzer_26: -1319740897
+      Kreutzer_27: -990318631
+      Kreutzer_28: -1946974528
+      Kreutzer_29: -85920600
+      Kreutzer_3: -489046377
+      Kreutzer_30: -1524440221
+      Kreutzer_31: -1402210282
+      Kreutzer_32: 1375908233
+      Kreutzer_33: -1017676976
+      Kreutzer_34: -1124549491
+      Kreutzer_35: 652560574
+      Kreutzer_36: -472945607
+      Kreutzer_37: 506393552
+      Kreutzer_38: -161665221
+      Kreutzer_39: -752301877
+      Kreutzer_4: -516279076
+      Kreutzer_40: 773442759
+      Kreutzer_41: 1834608154
+      Kreutzer_42: -1556663171
+      Kreutzer_43: 1971249517
+      Kreutzer_44: 1369411540
+      Kreutzer_5: -135221524
+      Kreutzer_6: -1374117363
+      Kreutzer_7: 189501652
+      Kreutzer_8: 1624793803
+      Kreutzer_9: -1542193443
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

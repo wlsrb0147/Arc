@@ -1,0 +1,1156 @@
+fileFormatVersion: 2
+guid: 7976c22d877f74b49bfe587886fa5e29
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 12
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 0
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 450
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 4096
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: Sizz_0
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 3075
+        width: 153
+        height: 378
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c30b6830af021ed4cb4b9c56530cc887
+      internalID: 178222831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_1
+      rect:
+        serializedVersion: 2
+        x: 539
+        y: 3075
+        width: 127
+        height: 359
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0b81aae026a6b64ca110def8e33d8ff
+      internalID: -2123434142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_2
+      rect:
+        serializedVersion: 2
+        x: 913
+        y: 3075
+        width: 137
+        height: 352
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff0ec7ceb4efd0f46be05aab3e9c0e15
+      internalID: 2120038005
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_3
+      rect:
+        serializedVersion: 2
+        x: 1296
+        y: 3075
+        width: 135
+        height: 364
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 556163ceda9cedb49a11619cf8cd4b0b
+      internalID: 567997614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_4
+      rect:
+        serializedVersion: 2
+        x: 1682
+        y: 3075
+        width: 158
+        height: 369
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb64e6f5f806f634da6aa411d51dd6f2
+      internalID: 1934098288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_5
+      rect:
+        serializedVersion: 2
+        x: 2089
+        y: 3075
+        width: 130
+        height: 357
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca032f7532eccd84b95d387b9c1454fe
+      internalID: 1760710305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_6
+      rect:
+        serializedVersion: 2
+        x: 2457
+        y: 3075
+        width: 136
+        height: 347
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65428b067a310b84faf9db4559d6b399
+      internalID: 1263671447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_7
+      rect:
+        serializedVersion: 2
+        x: 2836
+        y: 3075
+        width: 133
+        height: 357
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd6401ef28346a040a86757fb7f75813
+      internalID: 2133575813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_8
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 3075
+        width: 153
+        height: 371
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6f1f9df84d68c544982037f0121cf07
+      internalID: 1366396181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_9
+      rect:
+        serializedVersion: 2
+        x: 143
+        y: 2621
+        width: 173
+        height: 377
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cbc1049cfe0a034db65d5dd7cc43323
+      internalID: -458652409
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_10
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 2621
+        width: 199
+        height: 318
+      alignment: 9
+      pivot: {x: 0.51271343, y: -0.16339917}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31749d0b7e6a818489cb889f8d1c69b4
+      internalID: -518915344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_11
+      rect:
+        serializedVersion: 2
+        x: 953
+        y: 2623
+        width: 154
+        height: 350
+      alignment: 9
+      pivot: {x: 0.34874457, y: -0.064225025}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2121231cadff1954ca6ef2d651b8411f
+      internalID: 537013305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_12
+      rect:
+        serializedVersion: 2
+        x: 1322
+        y: 2621
+        width: 161
+        height: 364
+      alignment: 9
+      pivot: {x: 0.3474379, y: 0.00485263}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4547577962746e140957d09fc1e19019
+      internalID: 657932158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_13
+      rect:
+        serializedVersion: 2
+        x: 1693
+        y: 2621
+        width: 160
+        height: 347
+      alignment: 9
+      pivot: {x: 0.3703293, y: -0.014040548}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9d49cda38bc62148b9fc00a0fc976f0
+      internalID: -1268554126
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_14
+      rect:
+        serializedVersion: 2
+        x: 2077
+        y: 2621
+        width: 164
+        height: 342
+      alignment: 9
+      pivot: {x: 0.37834352, y: -0.030391939}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f45b308ce2b0cb442acd82609c151807
+      internalID: 227298726
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_15
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 2621
+        width: 165
+        height: 369
+      alignment: 9
+      pivot: {x: 0.43076319, y: 0.00051673123}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a7253f4e32915d458d24a7de105d3e6
+      internalID: 474578494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_16
+      rect:
+        serializedVersion: 2
+        x: 2850
+        y: 2622
+        width: 162
+        height: 372
+      alignment: 9
+      pivot: {x: 0.3333891, y: 0.009392851}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8af674dd9b8d2a6448cbe91ccfa254e5
+      internalID: -1222639783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_17
+      rect:
+        serializedVersion: 2
+        x: 3217
+        y: 2613
+        width: 176
+        height: 353
+      alignment: 9
+      pivot: {x: 0.44606572, y: -0.010139097}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99aa81ae9939ea54aae969eb3c4efcb4
+      internalID: 379045389
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_18
+      rect:
+        serializedVersion: 2
+        x: 156
+        y: 2200
+        width: 158
+        height: 354
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c44cff74eb6a3644d89854479cd243eb
+      internalID: 1235616322
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_19
+      rect:
+        serializedVersion: 2
+        x: 490
+        y: 2200
+        width: 176
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47fb2d9692c7a714d9652dab5e1aa28e
+      internalID: 956700929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_20
+      rect:
+        serializedVersion: 2
+        x: 881
+        y: 2200
+        width: 185
+        height: 306
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2293a64795b19b0489a1079a09471a1a
+      internalID: 390603267
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_21
+      rect:
+        serializedVersion: 2
+        x: 1283
+        y: 2200
+        width: 170
+        height: 306
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ad691147421c8eb42b28081bc89f2b28
+      internalID: -1580382960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_22
+      rect:
+        serializedVersion: 2
+        x: 1660
+        y: 2200
+        width: 159
+        height: 313
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a1991facb077c349b51202ec79cd740
+      internalID: -2113020366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_23
+      rect:
+        serializedVersion: 2
+        x: 2023
+        y: 2200
+        width: 194
+        height: 313
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05f48eaf4f5858844a6f96112f70b95d
+      internalID: -1801982846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_24
+      rect:
+        serializedVersion: 2
+        x: 2419
+        y: 2200
+        width: 191
+        height: 320
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94eea64184c9a5449b90b127296e3262
+      internalID: -1768337550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_25
+      rect:
+        serializedVersion: 2
+        x: 2828
+        y: 2200
+        width: 187
+        height: 322
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f2a5635f69fb5f43b21d4b8b7f0ef11
+      internalID: -2017127610
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_26
+      rect:
+        serializedVersion: 2
+        x: 3221
+        y: 2200
+        width: 157
+        height: 318
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4b70ede6d8380e48a4a19cc2fe01578
+      internalID: -1035406258
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_27
+      rect:
+        serializedVersion: 2
+        x: 148
+        y: 1787
+        width: 142
+        height: 357
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 235dc44d7b9379245b0877cf051ade4d
+      internalID: 548825196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_28
+      rect:
+        serializedVersion: 2
+        x: 520
+        y: 1787
+        width: 165
+        height: 306
+      alignment: 9
+      pivot: {x: 0.38585132, y: -0.09962134}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b227af8ba08467148865bf7e5ee79d3b
+      internalID: -706511568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_29
+      rect:
+        serializedVersion: 2
+        x: 915
+        y: 1787
+        width: 180
+        height: 321
+      alignment: 9
+      pivot: {x: 0.40646225, y: 0.010185075}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8ea8ac317712194fbdcca95f8cbe321
+      internalID: -1712349548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_30
+      rect:
+        serializedVersion: 2
+        x: 1324
+        y: 1787
+        width: 165
+        height: 319
+      alignment: 9
+      pivot: {x: 0.423146, y: -0.0017453376}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d9905ed78e383439414fd62b954171
+      internalID: 1050620752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_31
+      rect:
+        serializedVersion: 2
+        x: 1720
+        y: 1787
+        width: 144
+        height: 311
+      alignment: 9
+      pivot: {x: 0.40516493, y: -0.0040608984}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 25f245c3b2430984d9a7fa25d9a615bc
+      internalID: -771288243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_32
+      rect:
+        serializedVersion: 2
+        x: 2093
+        y: 1787
+        width: 153
+        height: 281
+      alignment: 9
+      pivot: {x: 0.28165212, y: -0.06124715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 427e632587827454b93555a257f45712
+      internalID: -88444914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_33
+      rect:
+        serializedVersion: 2
+        x: 2475
+        y: 1787
+        width: 171
+        height: 306
+      alignment: 9
+      pivot: {x: 0.34598154, y: 0.001937567}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f58413ce90e6174daef393be6567503
+      internalID: 483358788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_34
+      rect:
+        serializedVersion: 2
+        x: 2862
+        y: 1787
+        width: 143
+        height: 311
+      alignment: 9
+      pivot: {x: 0.36002377, y: -0.0037096029}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3eb65f12d63ca64e8b6fcc60b1208cf
+      internalID: 1381489079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_35
+      rect:
+        serializedVersion: 2
+        x: 3236
+        y: 1787
+        width: 135
+        height: 321
+      alignment: 9
+      pivot: {x: 0.38427553, y: -0.0046371506}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0d408a6e5cab7498c80966c2122bd4
+      internalID: 745771977
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_36
+      rect:
+        serializedVersion: 2
+        x: 138
+        y: 1366
+        width: 153
+        height: 352
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fed9988ec4e883646b5eef890e20e7d3
+      internalID: 1317051505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_37
+      rect:
+        serializedVersion: 2
+        x: 543
+        y: 1366
+        width: 138
+        height: 344
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78298d164d46b284f8cdce9a89694b54
+      internalID: 969074500
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_38
+      rect:
+        serializedVersion: 2
+        x: 933
+        y: 1366
+        width: 124
+        height: 354
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 022b2e32072c0d1408ee857b9d51ecaa
+      internalID: 1795135497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_39
+      rect:
+        serializedVersion: 2
+        x: 1309
+        y: 1366
+        width: 129
+        height: 318
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e38a5b642b05154d868517e6a2b1878
+      internalID: 657074558
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_40
+      rect:
+        serializedVersion: 2
+        x: 1691
+        y: 1366
+        width: 145
+        height: 332
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc9c58f1a36894c4591c181afe93b8d2
+      internalID: 1379198165
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_41
+      rect:
+        serializedVersion: 2
+        x: 2088
+        y: 1366
+        width: 129
+        height: 320
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed161036bead98f40a0d0f30313c61f4
+      internalID: -749555898
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_42
+      rect:
+        serializedVersion: 2
+        x: 2461
+        y: 1366
+        width: 129
+        height: 323
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1887ab5bd543bd54184e479bf7dcbaa4
+      internalID: 1446312354
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_43
+      rect:
+        serializedVersion: 2
+        x: 2838
+        y: 1366
+        width: 133
+        height: 310
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a5d97bc4436a94fa5f9bbfc953dfcd
+      internalID: -484905073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Sizz_44
+      rect:
+        serializedVersion: 2
+        x: 3222
+        y: 1366
+        width: 151
+        height: 327
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd4fa1f38cc46f14c912aa9e71e3c445
+      internalID: -1770753380
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 13e260ca838c9b241bc7ed067df634f6
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      Sizz_0: 178222831
+      Sizz_1: -2123434142
+      Sizz_10: -518915344
+      Sizz_11: 537013305
+      Sizz_12: 657932158
+      Sizz_13: -1268554126
+      Sizz_14: 227298726
+      Sizz_15: 474578494
+      Sizz_16: -1222639783
+      Sizz_17: 379045389
+      Sizz_18: 1235616322
+      Sizz_19: 956700929
+      Sizz_2: 2120038005
+      Sizz_20: 390603267
+      Sizz_21: -1580382960
+      Sizz_22: -2113020366
+      Sizz_23: -1801982846
+      Sizz_24: -1768337550
+      Sizz_25: -2017127610
+      Sizz_26: -1035406258
+      Sizz_27: 548825196
+      Sizz_28: -706511568
+      Sizz_29: -1712349548
+      Sizz_3: 567997614
+      Sizz_30: 1050620752
+      Sizz_31: -771288243
+      Sizz_32: -88444914
+      Sizz_33: 483358788
+      Sizz_34: 1381489079
+      Sizz_35: 745771977
+      Sizz_36: 1317051505
+      Sizz_37: 969074500
+      Sizz_38: 1795135497
+      Sizz_39: 657074558
+      Sizz_4: 1934098288
+      Sizz_40: 1379198165
+      Sizz_41: -749555898
+      Sizz_42: 1446312354
+      Sizz_43: -484905073
+      Sizz_44: -1770753380
+      Sizz_5: 1760710305
+      Sizz_6: 1263671447
+      Sizz_7: 2133575813
+      Sizz_8: 1366396181
+      Sizz_9: -458652409
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

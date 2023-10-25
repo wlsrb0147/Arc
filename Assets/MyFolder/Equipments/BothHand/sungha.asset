@@ -1,0 +1,27 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
+  m_Name: sungha
+  m_EditorClassIdentifier: 
+  itemType: 12
+  allowedCharacterType: 1
+  ItemName: "\uC131\uD654\uB839"
+  ItemNameText: {fileID: 0}
+  ItemImage: {fileID: 0}
+  ItemIcon: {fileID: 21300000, guid: 11c8cb334c7923c48843e07270d37e93, type: 3}
+  barrier: 50
+  attribute:
+    Str: 200
+    Int: 150
+    Vit: 50
+    Agi: 50
+    Luk: 100
