@@ -6,10 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="0ec43064-8ed8-4326-9813-392b95e1259a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -162,7 +159,7 @@
       <workItem from="1697602512226" duration="54551000" />
       <workItem from="1698020387683" duration="38744000" />
       <workItem from="1698203295421" duration="621000" />
-      <workItem from="1698207788114" duration="18755000" />
+      <workItem from="1698207788114" duration="20399000" />
     </task>
     <servers />
   </component>

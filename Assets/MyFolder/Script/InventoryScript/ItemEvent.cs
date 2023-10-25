@@ -45,6 +45,11 @@ namespace MyFolder.Script.InventoryScript
                     Inventory.selectInventoryItem = item.name;   
                 }
             }
+
+            if (eventData.button == PointerEventData.InputButton.Right)
+            {
+                _manager.DeleteItem(item);
+            }
             _time = Time.unscaledTime;
         }
     }
