@@ -15,16 +15,12 @@ namespace MyFolder.Script.InventoryScript
         private ItemDatabase _db;
         private ItemManager _manager;
         private Items item;
+        private ItemType _type;
         
         private void Awake()
         {
             _db = GameObject.FindWithTag("DB").GetComponent<ItemDatabase>();
-            _manager = GameObject.FindWithTag("Inven").GetComponent<ItemManager>();
-        }
-
-        private void Start()
-        {
-            item = _db.FindItemByName(gameObject.name);
+            _manager = ItemManager.instance;
         }
 
         public void OnPointerClick(PointerEventData eventData)

@@ -64,7 +64,7 @@ namespace MyFolder.Script
         public int tempSelectedLeftButton;
         public int tobButtonMax;
         public int selectedLeftButton;
-        public bool istabChanged = false;
+        public bool istabChanged;
 
         public Inventory inven;
         public Battle battle;
@@ -72,9 +72,9 @@ namespace MyFolder.Script
     
         private bool isFieldActive = true;
         private bool isBattleActive = false;
-        private bool isInvenActive = false;
+        private bool isInvenActive;
 
-        public static UI_Manager UI_instance = null;
+        public static UI_Manager UI_instance;
         public float left;
     
         #region  Dictionary
@@ -95,7 +95,7 @@ namespace MyFolder.Script
         #endregion
     
         private int expireTab;
-        private bool isInvenContentsChanged = false;
+        private bool isInvenContentsChanged;
         private string currentSelect = "";
         private string currentNotUseSelect = "";
         private void Awake()
