@@ -189,8 +189,5 @@ public class FaceSorting : MonoBehaviour
             }
             
         }
-        
-        
-        /// 여기다가 리더 ani 바꾸기
     }
 }

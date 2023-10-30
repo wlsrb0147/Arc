@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using MyFolder.Script.InventoryScript;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -39,10 +40,7 @@ namespace MyFolder.Script
         public Text charactersState;
         public Text notUsingName;
         
-        public static int leaderNum;
-        public static string selectEquipedItem;
         public static string selectFaceName;
-        public static string selectInventoryItem;
         public static string tab15SelectName;
         public static bool needSort;
         public static List<Transform> notUsing = new();
@@ -74,7 +72,7 @@ namespace MyFolder.Script
         private bool isBattleActive = false;
         private bool isInvenActive;
 
-        public static UI_Manager UI_instance;
+        public static UI_Manager instance;
         public float left;
     
         #region  Dictionary
@@ -92,6 +90,7 @@ namespace MyFolder.Script
         private Dictionary<string, Color> colorSet = new();
         private Dictionary<string, string> nameChange = new();
         private Dictionary<string, CharacterStat> stats = new();
+        private Dictionary<string, CharacterType> name2type = new();
         #endregion
     
         private int expireTab;
@@ -101,14 +100,14 @@ namespace MyFolder.Script
         private void Awake()
         {
             // 만약 instance가 비어있지 않고 현재 인스턴스와 다르다면 (이미 다른 인스턴스가 존재한다면)
-            if (UI_instance != null && UI_instance != this)
+            if (instance != null && instance != this)
             {
                 Destroy(gameObject); // 현재 인스턴스 파괴
                 return; // 이후 로직 실행하지 않음
             }
 
             // instance가 비어있다면 현재 인스턴스로 설정
-            UI_instance = this;
+            instance = this;
 
             DontDestroyOnLoad(gameObject);
         }
@@ -244,6 +243,15 @@ namespace MyFolder.Script
             stats.Add("SizzBox",CharacterManager.instance.info[7]);
             stats.Add("TenziBox",CharacterManager.instance.info[8]);
             
+            name2type.Add("AiBox",CharacterType.Ai);
+            name2type.Add("CarrotBox",CharacterType.Carrot);
+            name2type.Add("CellineBox",CharacterType.Celline);
+            name2type.Add("EluardBox",CharacterType.Eluard);
+            name2type.Add("KreutzerBox",CharacterType.Kreutzer);
+            name2type.Add("MariaBox",CharacterType.Maria);
+            name2type.Add("PeachBox",CharacterType.Peach);
+            name2type.Add("SizzBox",CharacterType.Sizz);
+            name2type.Add("TenziBox",CharacterType.Tenzi);
             
             #endregion
         
@@ -402,6 +410,11 @@ namespace MyFolder.Script
             inven.tab11Text[11].text = stats[Inventory.selectFaceName].Mag.ToString();
             inven.tab11Text[12].text = stats[Inventory.selectFaceName].Spd.ToString();
             inven.tab11Text[13].text = stats[Inventory.selectFaceName].Cri.ToString();
+        }
+
+        public CharacterType GetType(string characterName)
+        {
+            return name2type[characterName];
         }
     }
 }

@@ -29,12 +29,12 @@ namespace MyFolder.Script.InventoryScript
         Helmet = 1 << 0,
         Brooch = 1 << 1,
         Weapon = 1 << 2,
-        Shild = 1 << 3,
+        Shield = 1 << 3,
         Clothes = 1 << 4,
         Shoes = 1 << 5,
         Accessory = 1 << 6,
         Gloves = 1 << 7 ,
-        BothHand = Weapon | Shild,
+        BothHand = Weapon | Shield
     }
 
     public enum ClickType

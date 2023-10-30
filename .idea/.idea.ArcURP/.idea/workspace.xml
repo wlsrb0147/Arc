@@ -5,27 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ec43064-8ed8-4326-9813-392b95e1259a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Enums.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Enums.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/InventoryManager.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/InventoryManager.cs.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemList.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemList.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Prefabs/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Prefabs/Item.prefab" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/BT_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/BT_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/Enums.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/Enums.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquipedItem.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquipedItem.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Items.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Items.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Enums.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemList.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemList.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -185,7 +167,7 @@
       <workItem from="1698207788114" duration="35910000" />
       <workItem from="1698392795070" duration="898000" />
       <workItem from="1698495163983" duration="5638000" />
-      <workItem from="1698550362529" duration="6835000" />
+      <workItem from="1698550362529" duration="7591000" />
     </task>
     <servers />
   </component>

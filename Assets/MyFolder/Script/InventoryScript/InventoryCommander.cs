@@ -2,13 +2,14 @@ using UnityEngine;
 
 namespace MyFolder.Script.InventoryScript
 {
-    public class InventoryManager : MonoBehaviour
+    public class InventoryCommander : MonoBehaviour
     {
-        public static InventoryManager instance;
+        public static InventoryCommander instance;
         private string _itemName;
-        private bool _equipState;
+        private bool _equipped;
         private ClickType _clickType;
-
+        public ItemEvent SelectedItem { get; set; }
+        
         private void Awake()
         {
             if (instance == null)
@@ -21,10 +22,10 @@ namespace MyFolder.Script.InventoryScript
             }
         }
 
-        public void SetInfo(string itemName, bool equipstate)
+        public void SetItemInfo(string itemName, bool equipped)
         {
             _itemName = itemName;
-            _equipState = equipstate;
+            _equipped = equipped;
         }
 
         public void ClickType(ClickType clickType)
@@ -34,12 +35,24 @@ namespace MyFolder.Script.InventoryScript
                 case InventoryScript.ClickType.LeftClick:
                     break;
                 case InventoryScript.ClickType.RightClick:
+                    ItemManager.instance.ChangeItem(_itemName,_equipped);
+                    ItemManager.instance.RefreshItem();
                     break;
                 case InventoryScript.ClickType.DoubleLeftClick:
                     break;
             }
         }
-    
-    
+
+        public void CreateItemCommand()
+        {
+            ItemManager.instance.CreateItem();
+            ItemManager.instance.RefreshItem();
+        }
+
+        public void DeleteItemCommand()
+        {
+            ItemManager.instance.DeleteItem();
+            ItemManager.instance.RefreshItem();
+        }
     }
 }

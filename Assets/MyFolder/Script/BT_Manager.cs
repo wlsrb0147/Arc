@@ -14,8 +14,8 @@ public class BT_Manager : MonoBehaviour
 {
     public void Tbt(int buttonNumber)
     {
-        UI_Manager.UI_instance.tempSelectedTopButton = buttonNumber;
-        UI_Manager.UI_instance.istabChanged = true;
+        UI_Manager.instance.tempSelectedTopButton = buttonNumber;
+        UI_Manager.instance.istabChanged = true;
     }
     public void Lbt(int tempLeft)
     {
@@ -24,9 +24,19 @@ public class BT_Manager : MonoBehaviour
         if (tempLeft == 10)   { topMax = 5; }
         else {topMax = 3; }
         
-        UI_Manager.UI_instance.tempSelectedLeftButton = tempLeft;
-        UI_Manager.UI_instance.tempSelectedTopButton = 1;
-        UI_Manager.UI_instance.tobButtonMax = topMax;
-        UI_Manager.UI_instance.istabChanged = true;
+        UI_Manager.instance.tempSelectedLeftButton = tempLeft;
+        UI_Manager.instance.tempSelectedTopButton = 1;
+        UI_Manager.instance.tobButtonMax = topMax;
+        UI_Manager.instance.istabChanged = true;
+    }
+
+    public void CreateItem()
+    {
+        InventoryCommander.instance.CreateItemCommand();
+    }
+    
+    public void DeleteItem()
+    {
+        InventoryCommander.instance.DeleteItemCommand();
     }
 }
