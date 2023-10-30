@@ -165,7 +165,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 5026063290012137655}
-  - component: {fileID: 3582775996376207479}
+  - component: {fileID: 4949638792584899885}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -189,14 +189,14 @@ RectTransform:
   - {fileID: 7032680768177677230}
   - {fileID: 5728154483497097332}
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: -1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
   m_AnchoredPosition: {x: -637.03625, y: 150.00064}
   m_SizeDelta: {x: 627.2325, y: 77.4813}
   m_Pivot: {x: 0, y: 1}
---- !u!114 &3582775996376207479
+--- !u!114 &4949638792584899885
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

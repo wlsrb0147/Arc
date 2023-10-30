@@ -1,6 +1,6 @@
 using System;
 
-namespace MyFolder.Script
+namespace MyFolder.Script.InventoryScript
 {
     [Flags]
     public enum CharacterType
@@ -35,5 +35,12 @@ namespace MyFolder.Script
         Accessory = 1 << 6,
         Gloves = 1 << 7 ,
         BothHand = Weapon | Shild,
+    }
+
+    public enum ClickType
+    {
+        LeftClick,
+        DoubleLeftClick,
+        RightClick
     }
 }

@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using MyFolder.Script.InventoryScript;
 using UnityEngine;
 
 namespace MyFolder.Script

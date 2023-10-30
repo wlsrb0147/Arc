@@ -29,27 +29,4 @@ public class BT_Manager : MonoBehaviour
         UI_Manager.UI_instance.tobButtonMax = topMax;
         UI_Manager.UI_instance.istabChanged = true;
     }
-
-    
-    private ItemManager _im;
-    private ItemManager _idb;
-    
-    
-    public void AddList()
-    {
-        _idb = GameObject.FindGameObjectWithTag("Inven").GetComponent<ItemManager>();
-        ItemDatabase db = GameObject.FindGameObjectWithTag("DB").GetComponent<ItemDatabase>();
-
-        _idb.Additem(db.Allitems[Random.Range(0,db.Allitems.Count)]);
-        
-    }
-    
-    public void RemoveList()
-    {
-        _idb = GameObject.FindGameObjectWithTag("Inven").GetComponent<ItemManager>();
-        if (_idb.inventoryItemsList.Count != 0)
-        {
-            _idb.DeleteItem(_idb.inventoryItemsList[Random.Range(0,_idb.inventoryItemsList.Count)]);
-        }
-    }
 }

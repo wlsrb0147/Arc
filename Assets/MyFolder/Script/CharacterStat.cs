@@ -1,4 +1,6 @@
-﻿namespace MyFolder.Script
+﻿using MyFolder.Script.InventoryScript;
+
+namespace MyFolder.Script
 {
     public class CharacterStat
     {
