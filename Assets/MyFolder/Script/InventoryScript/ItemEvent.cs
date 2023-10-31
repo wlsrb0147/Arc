@@ -14,8 +14,7 @@ public class ItemEvent : MonoBehaviour,IPointerClickHandler
 
     public void OnPointerClick(PointerEventData eventData)
     {
-        InventoryCommander.instance.SetItemInfo(gameObject.name, Equipped);
-        InventoryCommander.instance.SelectedItem = this;
+        InventoryCommander.instance.ItemName = gameObject.name;
         
         switch (eventData.button)
         {

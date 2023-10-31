@@ -2,6 +2,7 @@ using System;
 using System.Collections.Generic;
 using MyFolder.Script.InventoryScript;
 using UnityEngine;
+using UnityEngine.Serialization;
 using UnityEngine.UI;
 
 namespace MyFolder.Script
@@ -62,7 +63,7 @@ namespace MyFolder.Script
         public int tempSelectedLeftButton;
         public int tobButtonMax;
         public int selectedLeftButton;
-        public bool istabChanged;
+        [FormerlySerializedAs("istabChanged")] public bool isSomethingChanged;
 
         public Inventory inven;
         public Battle battle;
@@ -307,57 +308,56 @@ namespace MyFolder.Script
 
         void Inven()
         {
-            if (istabChanged) // 탭 변경
+            if (isSomethingChanged) // 탭 변경
             {
                 if (tempSelectedTopButton > tobButtonMax)
                 {
                     tempSelectedTopButton = selectedTopButton;
-                    istabChanged = false;
+                    isSomethingChanged = false;
                     return;
                 }
                 isInvenContentsChanged = true;
-                istabChanged = false;
+                isSomethingChanged = false;
             }
-        
-            if (isInvenContentsChanged) // 내용물 변경
+ // 
+            if (isInvenContentsChanged) // 탭이 변경됐을 때 실행
             {
-                ChangeInven(selectedLeftButton,selectedTopButton,
-                    tempSelectedLeftButton,tempSelectedTopButton);
+                ChangeInven(selectedLeftButton, selectedTopButton,
+                    tempSelectedLeftButton, tempSelectedTopButton);
                 selectedLeftButton = tempSelectedLeftButton;
                 selectedTopButton = tempSelectedTopButton;
                 isInvenContentsChanged = false;
-            }
+// 여기까지였던 대괄호를 맨아래까지 묶음
+                if (selectedLeftButton == 10)
+                {
+                    ChangeFace(ref currentSelect, Inventory.selectFaceName, inven.check.transform);
+                }
 
-            if (selectedLeftButton == 10)
-            {
-                ChangeFace(ref currentSelect, Inventory.selectFaceName, inven.check.transform);
-            }
-        
-            if (selectedLeftButton + selectedTopButton == 11)
-            {
-                inven.inventoryContents[0].sprite = Status[Inventory.selectFaceName];
-                ChangeTab11Stat();
-            }
+                if (selectedLeftButton + selectedTopButton == 11)
+                {
+                    inven.inventoryContents[0].sprite = Status[Inventory.selectFaceName];
+                    ChangeTab11Stat();
+                }
 
-            if (selectedLeftButton + selectedTopButton == 12)
-            {
-                
-                inven.eqipmentImg.sprite = Equipments[Inventory.selectFaceName];
-            }
+                if (selectedLeftButton + selectedTopButton == 12)
+                {
+                    inven.eqipmentImg.sprite = Equipments[Inventory.selectFaceName];
+                }
 
-            if (selectedLeftButton + selectedTopButton == 13)
-            {
-                inven.charactersState.text = nameChange[Inventory.selectFaceName] + "의 상태";
-            }
+                if (selectedLeftButton + selectedTopButton == 13)
+                {
+                    inven.charactersState.text = nameChange[Inventory.selectFaceName] + "의 상태";
+                }
 
-            if (selectedLeftButton + selectedTopButton == 15)
-            {
-                ChangeFace(ref currentNotUseSelect, Inventory.tab15SelectName, inven.check2.transform);
-                inven.notUsingName.text = nameChange[Inventory.tab15SelectName];
+                if (selectedLeftButton + selectedTopButton == 15)
+                {
+                    ChangeFace(ref currentNotUseSelect, Inventory.tab15SelectName, inven.check2.transform);
+                    inven.notUsingName.text = nameChange[Inventory.tab15SelectName];
+                }
             }
         }
 
-        void ChangeFace(ref string current,string change,Transform check)
+        private void ChangeFace(ref string current,string change,Transform check)
         {
             if (current== "") // 초기값 설정
             {
@@ -377,8 +377,8 @@ namespace MyFolder.Script
                 nameInBox[change].color = colorSet[change];
             }
         }
-    
-        void ChangeInven(int disableLeft,int disableTop,int enableLeft,int enableTop)
+
+        private void ChangeInven(int disableLeft,int disableTop,int enableLeft,int enableTop)
         {
             if (disableLeft != enableLeft)
             {
@@ -392,7 +392,7 @@ namespace MyFolder.Script
         }
 
         // 레벨, 경험치/맥스경험치, 아머/맥스아머, hp/maxhp, 힘민능스피드럭 , 공방마법스피드크리
-        void ChangeTab11Stat()
+        private void ChangeTab11Stat()
         {
             inven.tab11Text[0].text = stats[Inventory.selectFaceName].Level.ToString();
             inven.tab11Text[1].text = stats[Inventory.selectFaceName].exp.Value + "/" +

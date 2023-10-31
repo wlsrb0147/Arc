@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
@@ -8,8 +9,9 @@ namespace MyFolder.Script.InventoryScript
 {
     public class ItemManager : MonoBehaviour
     {
+        public GameObject[] EquipmentsUI;
         public List<Items> inventoryItems;
-        public Items[][] equippedItems = new Items[9][];
+        public readonly Items[][] equippedItems = new Items[9][];
         public GameObject itemSlot;
         public Transform content1;
         public Transform content2;
@@ -50,8 +52,8 @@ namespace MyFolder.Script.InventoryScript
             _itemType2Int.Add(ItemType.Brooch,4);
             _itemType2Int.Add(ItemType.Shield,5);
             _itemType2Int.Add(ItemType.Accessory,6);
-            _itemType2Int.Add(ItemType.BothHand,-1);
-            _itemType2Int.Add(ItemType.Gloves,-1);
+            _itemType2Int.Add(ItemType.BothHand,1);
+            _itemType2Int.Add(ItemType.Gloves,6);
             
 
             for (int i = 0; i < 9; i++)
@@ -61,55 +63,166 @@ namespace MyFolder.Script.InventoryScript
             
             
         }
-        public void ChangeItem(string itemName,bool equipped)
+        public void ChangeItem(string itemName)
         {
-            // 아이템 타입이 캐릭과 맞을때만 실행해야함
             var item = inventoryItems.Find(i => i.ItemName == itemName);
-            
-            if (equipped)
-            {
-                // 장착 캐릭에서 
-            }
-            else
-            {
                 InventoryItemEquip(item);
-                item.quantity--; 
-            }
-
-            if (item.quantity == 0)
+                
+            if (item.quantity is 0)
             {
                 inventoryItems.Remove(item);
             }
+            
+            RefreshItem();
         }
-        
-        public void RefreshItem()
+        private void InventoryItemEquip(Items items)
         {
-            foreach (Transform child in content1)
+            var currentCharacter = UI_Manager.instance.GetType(Inventory.selectFaceName);
+            var allowedType = items.allowedCharacterType;
+            var itemType = items.itemType;
+
+            if ((currentCharacter & allowedType) != currentCharacter)
             {
-                Destroy(child.gameObject); // 기존 UI 삭제
-            }
-            foreach (Transform child in content2)
-            {
-                Destroy(child.gameObject); // 기존 UI 삭제
+                return;
             }
             
-            foreach (var items in inventoryItems)
-            {
-                GameObject slotPrefab1 = Instantiate(itemSlot, content1);
-                slotPrefab1.name = items.ItemName;
-                slotPrefab1.transform.Find("Item_Name").GetComponent<Text>().text = items.ItemName;
-                slotPrefab1.transform.Find("Image").GetComponent<Image>().sprite = items.ItemIcon;
-                slotPrefab1.transform.Find("Item_Have").GetComponent<Text>().text = items.quantity.ToString();
+            var charIndex = _charType2Int[currentCharacter];
+            var itemIndex = _itemType2Int[itemType];
 
-                GameObject slotPrefab2 = Instantiate(itemSlot, content2);
-                slotPrefab2.name = items.ItemName;
-                slotPrefab2.transform.Find("Item_Name").GetComponent<Text>().text = items.ItemName;
-                slotPrefab2.transform.Find("Image").GetComponent<Image>().sprite = items.ItemIcon;
-                slotPrefab2.transform.Find("Item_Have").GetComponent<Text>().text = items.quantity.ToString();
+            bool bothHand,glove;
+            
+            switch (itemType)
+            {
+                case ItemType.Weapon:
+                case ItemType.Shield:
+                    bothHand = IsBothHand();
+                    if (bothHand) // 현재 장착중인 아이템이 양손무기면
+                    { // 양손무기 벗고, 현재 장비 장착
+                        UnequipItem(_itemType2Int[ItemType.BothHand]);
+                        equippedItems[charIndex][itemIndex] = items;
+                    }
+                    else
+                    { // 장비타입 벗고, 현재장비 장착
+                        UnequipItem(itemIndex);
+                        equippedItems[charIndex][itemIndex] = items;
+                    }
+                    break;
+                
+                case ItemType.BothHand:
+                    bothHand = IsBothHand();
+                    if (bothHand) // 현재 장착중인 아이템이 양손무기면
+                    { // 무기 벗고, 현재 장비 장착
+                        UnequipItem(itemIndex);
+                        equippedItems[charIndex][itemIndex] = items;
+                    }
+                    else
+                    { // 무기 방패 벗고, 현재장비 장착
+                        UnequipItem(_itemType2Int[ItemType.Weapon]);
+                        UnequipItem(_itemType2Int[ItemType.Shield]);
+                        equippedItems[charIndex][itemIndex] = items;
+                    }
+                    break;
+                
+                case ItemType.Accessory:
+                    glove = IsGlove();
+                    if (glove)
+                    { // 장갑꼈으면 장갑 벗음
+                        UnequipItem(_itemType2Int[ItemType.Gloves]);
+                        equippedItems[charIndex][itemIndex] = items;
+                    }
+                    else
+                    {
+                        if (equippedItems[charIndex][itemIndex] == null)
+                        {
+                            equippedItems[charIndex][itemIndex] = items;
+                        }
+                        else
+                        {
+                            UnequipItem(itemIndex+1);
+                            equippedItems[charIndex][itemIndex+1] = items;
+                        }
+                    }
+                    break;
+                case ItemType.Gloves:
+                    glove = IsGlove();
+                    if (glove)
+                    {
+                        UnequipItem(itemIndex);
+                        equippedItems[charIndex][itemIndex] = items;
+                    }
+                    else
+                    {
+                        UnequipItem(_itemType2Int[ItemType.Accessory]);
+                        UnequipItem(_itemType2Int[ItemType.Accessory]+1);
+                        equippedItems[charIndex][itemIndex] = items;
+                    }
+                    break;
+                
+                // 모자, 브로치, 옷, 신발
+                case ItemType.Helmet:
+                case ItemType.Brooch:
+                case ItemType.Clothes:
+                case ItemType.Shoes:
+                default:
+                    UnequipItem(itemIndex);
+                    equippedItems[charIndex][itemIndex] = items;
+                    break;
+            }
+            
+            items.quantity--; 
+            return;
+
+            void DebugItem()
+            {
+                if (equippedItems[charIndex][itemIndex] != null )
+                {
+                    Debug.Log(equippedItems[charIndex][itemIndex].ItemName);
+                }
+            }
+            
+            void UnequipItem(int index)
+            {
+                var equipItem = equippedItems[charIndex][index];
+                
+                if (equipItem is null)
+                {
+                    return;
+                }
+                
+                var item = inventoryItems.Find(i => i == equipItem);
+                
+                if (item == null)
+                {
+                    inventoryItems.Add(equipItem);
+                    equipItem.quantity = 1;
+                }
+                else
+                {
+                    equipItem.quantity++;
+                }
+                equippedItems[charIndex][index] = null;
+            }
+            
+            bool IsBothHand()
+            {
+                var i = equippedItems[charIndex][_itemType2Int[ItemType.Weapon]];
+                if (i == null)
+                {
+                    return false;
+                }
+                return i.itemType is ItemType.BothHand;
+            }
+
+            bool IsGlove()
+            {
+                var i = equippedItems[charIndex][_itemType2Int[ItemType.Accessory]];
+                if (i == null)
+                {
+                    return false;
+                }
+                return i.itemType is ItemType.Gloves;
             }
         }
-        
-        
         public void CreateItem()
         {
             var x = Random.Range(0, ItemDatabase.instance.Allitems.Count);
@@ -124,6 +237,7 @@ namespace MyFolder.Script.InventoryScript
                 inventoryItems.Add(item);
                 item.quantity = 1;
             }
+            RefreshItem();
         }
         public void DeleteItem()
         {
@@ -132,91 +246,48 @@ namespace MyFolder.Script.InventoryScript
                 int x = Random.Range(0, inventoryItems.Count);
                 inventoryItems.Remove(inventoryItems[x]);
             }
+            RefreshItem();
         }
-        
-        
-        // 아이템을 장착하는 로직 실행중
-        // 장착하려는 아이템의 타입 필요함
-        // 장착하려는 아이템의 캐릭터 정보 필요함
-        // 전부 아이템에 존재함
-        // 인벤토리에 selectedFaceName 존재함
-        
-        private void InventoryItemEquip(Items items)
+        public void RefreshItem()
         {
-            var allowedType = items.allowedCharacterType;
-            var itemType = items.itemType;
-            var currentCharacter = UI_Manager.instance.GetType(Inventory.selectFaceName);
+            var content = content1.gameObject.activeInHierarchy ? content1 : content2;
 
-            if ((currentCharacter & allowedType) != currentCharacter)
+            foreach (Transform child in content)
             {
-                return;
+                Destroy(child.gameObject); // 기존 UI 삭제
             }
-            
-            var charIndex = _charType2Int[currentCharacter];
-            var itemIndex = _itemType2Int[itemType];
 
-            switch (itemType)
+            foreach (var items in inventoryItems)
             {
-                case ItemType.BothHand:
-                    CheckAndLog(_itemType2Int[ItemType.Weapon]);
-                    CheckAndLog(_itemType2Int[ItemType.Shield]);
-                    
-                    equippedItems[charIndex][_itemType2Int[ItemType.Weapon]] = items;
-                    equippedItems[charIndex][_itemType2Int[ItemType.Shield]] = items;
-                    break;
-                
-                case ItemType.Gloves:
-                    CheckAndLog(6);
-                    CheckAndLog(7);
-                    
-                    equippedItems[charIndex][6] = items;
-                    equippedItems[charIndex][7] = items;
-                    break;
-                
-                case ItemType.Accessory:
-                    if (equippedItems[charIndex][6] == null)
-                    {
-                        equippedItems[charIndex][6] = items; 
-                    }
-                    else
-                    {
-                        CheckAndLog(7);
-                        equippedItems[charIndex][7] = items; 
-                    }
-                    break;
-
-                case ItemType.Helmet:
-                case ItemType.Brooch:
-                case ItemType.Weapon:
-                case ItemType.Shield:
-                case ItemType.Clothes:
-                case ItemType.Shoes:
-                default:
-                    CheckAndLog(itemIndex);
-                    equippedItems[charIndex][itemIndex] = items;
-                    break;
+                var slotPrefab = Instantiate(itemSlot, content);
+                slotPrefab.name = items.ItemName;
+                slotPrefab.transform.Find("Item_Name").GetComponent<Text>().text = items.ItemName;
+                slotPrefab.transform.Find("Image").GetComponent<Image>().sprite = items.ItemIcon;
+                slotPrefab.transform.Find("Item_Have").GetComponent<Text>().text = items.quantity.ToString();
             }
-            
-            return;
 
-            // 양손무기, 장갑 처리 안해줌
-            // 양손무기, 양손장갑을 벗을 때 두개 증가하는 문제 발생
-            // 양손무기, 양손장갑을 낀 상태에서 장비 착용시 한쪽만 벗는 문제 발생
-            void CheckAndLog(int index)
+            var charIndex = _charType2Int[UI_Manager.instance.GetType(Inventory.selectFaceName)];
+            
+            for (int i = 0; i < EquipmentsUI.Length; i++)
             {
-                if (equippedItems[charIndex][index] != null)
+                Items currentItem = equippedItems[charIndex][i];
+                
+                if (currentItem == null)
                 {
-                    var item = inventoryItems.Find(i => i == equippedItems[charIndex][index]);
-                    if (item != null)
-                    {
-                        item.quantity++;
-                    }
-                    else
-                    {
-                        inventoryItems.Add(equippedItems[charIndex][index]);
-                        equippedItems[charIndex][index].quantity = 1;
-                    }
+                    EquipmentsUI[i].transform.Find("Spr").GetComponent<Image>().sprite = null;
                 }
+                else
+                {
+                    EquipmentsUI[i].transform.Find("Spr").GetComponent<Image>().sprite = currentItem.ItemIcon;
+                }
+            }
+            if (equippedItems[charIndex][6]?.itemType == ItemType.Gloves)
+            {
+                EquipmentsUI[7].transform.Find("Spr").GetComponent<Image>().sprite = equippedItems[charIndex][6].ItemIcon;
+            }
+            if (equippedItems[charIndex][1]?.itemType == ItemType.BothHand)
+            {
+                EquipmentsUI[5].transform.Find("Spr").GetComponent<Image>().sprite = equippedItems[charIndex][1].ItemIcon;
             }
         }
     }
