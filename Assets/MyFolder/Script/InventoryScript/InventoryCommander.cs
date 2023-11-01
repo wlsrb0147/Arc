@@ -5,21 +5,17 @@ namespace MyFolder.Script.InventoryScript
     public class InventoryCommander : MonoBehaviour
     {
         public static InventoryCommander instance;
-        public string ItemName { get; set; }
         private ClickType _clickType;
-        
+        public string ItemName { get; set; }
+
         private void Awake()
         {
             if (instance == null)
-            {
                 instance = this;
-            }
             else
-            {
                 Destroy(gameObject);
-            }
         }
-        
+
 
         public void ClickType(ClickType clickType)
         {

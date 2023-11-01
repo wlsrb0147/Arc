@@ -1,8 +1,5 @@
-using System.Collections.Generic;
-using MyFolder.Script;
 using MyFolder.Script.InventoryScript;
 using UnityEngine;
-using UnityEngine.UI;
 
 [CreateAssetMenu(fileName = "Equipments", menuName = "Items/Equipments", order = 1)]
 public class Items : ScriptableObject
@@ -14,5 +11,5 @@ public class Items : ScriptableObject
     public Sprite ItemIcon;
     public int quantity = 1;
     public int barrier;
-    public Attribute attribute = new Attribute();
+    public Attribute attribute = new();
 }

@@ -1,7 +1,3 @@
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using Unity.VisualScripting;
 using UnityEngine;
 
 public class Manager : MonoBehaviour
@@ -10,13 +6,10 @@ public class Manager : MonoBehaviour
 
     private void Awake()
     {
-        if (instance != null && instance !=this)
-        {
-            Destroy(gameObject);
-        }
+        if (instance != null && instance != this) Destroy(gameObject);
 
         instance = this;
-        
+
         DontDestroyOnLoad(gameObject);
     }
 }

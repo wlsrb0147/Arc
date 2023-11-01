@@ -1,10 +1,12 @@
+using System;
+
 public class Stat
 {
     public int Value { get; set; }
     public int MaxValue { get; set; }
 }
 
-[System.Serializable]
+[Serializable]
 public class Attribute
 {
     public int Str; // 힘
@@ -21,6 +23,4 @@ public class Attribute
         Agi = agi;
         Luk = luk;
     }
-
-    
 }

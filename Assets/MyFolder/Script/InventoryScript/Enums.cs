@@ -6,15 +6,15 @@ namespace MyFolder.Script.InventoryScript
     public enum CharacterType
     {
         Ai = 1 << 0,
-        Carrot = 1<< 1 ,
-        Celline = 1<< 2,
-        Eluard = 1<< 3,
-        Kreutzer = 1<< 4,
-        Maria = 1<< 5,
-        Peach = 1<< 6,
-        Sizz = 1<< 7,
-        Tenzi = 1<< 8,
-        
+        Carrot = 1 << 1,
+        Celline = 1 << 2,
+        Eluard = 1 << 3,
+        Kreutzer = 1 << 4,
+        Maria = 1 << 5,
+        Peach = 1 << 6,
+        Sizz = 1 << 7,
+        Tenzi = 1 << 8,
+
         Magician = Ai | Sizz,
         Assassin = Carrot | Peach,
         SpearMan = Tenzi,
@@ -23,7 +23,7 @@ namespace MyFolder.Script.InventoryScript
         Whip = Eluard
     }
 
-   
+
     public enum ItemType
     {
         Helmet = 1 << 0,
@@ -33,7 +33,7 @@ namespace MyFolder.Script.InventoryScript
         Clothes = 1 << 4,
         Shoes = 1 << 5,
         Accessory = 1 << 6,
-        Gloves = 1 << 7 ,
+        Gloves = 1 << 7,
         BothHand = Weapon | Shield
     }
 
