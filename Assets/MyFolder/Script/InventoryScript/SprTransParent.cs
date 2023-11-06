@@ -7,7 +7,7 @@ namespace MyFolder.Script.InventoryScript
     {
         private Sprite _spr;
         private Image _img;
-    
+
         private void Awake()
         {
             _img = GetComponent<Image>();
@@ -16,7 +16,8 @@ namespace MyFolder.Script.InventoryScript
 
         void Update()
         {
-            _img.color = _spr == null ? new Color(0, 0, 0, 0): new Color(1, 1, 1, 1);
+            _spr = _img.sprite;
+            _img.color = _spr == null ? Color.clear : Color.white;
         }
     }
 }

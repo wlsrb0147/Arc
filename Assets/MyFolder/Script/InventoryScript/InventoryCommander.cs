@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace MyFolder.Script.InventoryScript
@@ -5,9 +6,10 @@ namespace MyFolder.Script.InventoryScript
     public class InventoryCommander : MonoBehaviour
     {
         public static InventoryCommander instance;
-        private ClickType _clickType;
-        public string ItemName { get; set; }
+        public int ItemSlot { get; set; }
+        public string SelectedInvenItemName { get; set; }
 
+        
         private void Awake()
         {
             if (instance == null)
@@ -15,27 +17,97 @@ namespace MyFolder.Script.InventoryScript
             else
                 Destroy(gameObject);
         }
+        
 
-
-        public void ClickType(ClickType clickType)
+        public void HandleSlotTextColor(bool enter, int slotNum)
         {
-            switch (clickType)
+            switch (slotNum)
             {
-                case InventoryScript.ClickType.LeftClick:
+                case 0:
+                case 2:
+                case 3:
+                case 4: 
+                    ItemManager.instance.ChangeColor(enter,slotNum);
                     break;
-                case InventoryScript.ClickType.RightClick:
-                case InventoryScript.ClickType.DoubleLeftClick:
-                    ItemManager.instance.ChangeItem(ItemName);
+                case 1:
+                case 5:
+                    if (ItemManager.instance.IsDualEquipped(1))
+                    {
+                        ItemManager.instance.ChangeColor(enter,1);
+                        ItemManager.instance.ChangeColor(enter,5);
+                    }
+                    else
+                        ItemManager.instance.ChangeColor(enter,slotNum);
+                    break;
+                case 6:
+                case 7:
+                    if (ItemManager.instance.IsDualEquipped(6))
+                    {
+                        ItemManager.instance.ChangeColor(enter,6);
+                        ItemManager.instance.ChangeColor(enter,7);
+                    }
+                    else
+                        ItemManager.instance.ChangeColor(enter,slotNum);
                     break;
             }
         }
 
-        public void CreateItemCommand()
+        private void Reset()
+        {
+            ItemManager.instance.UnableAllCheck();
+            for (int i = 0; i < 6; i++)
+            {
+                ItemManager.instance.SetStat(i,0);    
+            }
+        }
+
+        public void FaceClick()
+        {
+            Reset();
+        }
+        
+        public void ClickType(ClickType clickType,bool isEquipped)
+        {
+            Reset();
+            
+            if (isEquipped) // true면 장착 아이템 클릭
+            {
+                switch (clickType)
+                {
+                    case InventoryScript.ClickType.LeftClick:
+                        ItemManager.instance.EquippedItemSelect(ItemSlot);
+                        ItemManager.instance.CalculateItemValue(ItemSlot);
+                        break;
+                    case InventoryScript.ClickType.RightClick:
+                    case InventoryScript.ClickType.DoubleLeftClick:
+                        ItemManager.instance.UnequipItemBySlot(ItemSlot);
+                        UI_Manager.instance.isSomethingChanged = true;
+                        break;
+                }
+            }
+            else
+            {
+                switch (clickType)
+                {
+                    case InventoryScript.ClickType.LeftClick:
+                        ItemManager.instance.InvenSelectItemCheck(SelectedInvenItemName);
+                        ItemManager.instance.CalculateItemValue(SelectedInvenItemName);
+                        break;
+                    case InventoryScript.ClickType.RightClick:
+                    case InventoryScript.ClickType.DoubleLeftClick:
+                        ItemManager.instance.ChangeItem(SelectedInvenItemName);
+                        UI_Manager.instance.isSomethingChanged = true;
+                        break;
+                }
+            }
+        }
+
+        public static void CreateItemCommand()
         {
             ItemManager.instance.CreateItem();
         }
 
-        public void DeleteItemCommand()
+        public static void DeleteItemCommand()
         {
             ItemManager.instance.DeleteItem();
         }

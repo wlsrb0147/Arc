@@ -15,9 +15,8 @@ MonoBehaviour:
   itemType: 64
   allowedCharacterType: 382
   ItemName: "\uBC30\uB9AC\uC5B4 \uB9C1"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 2d5f9274321921f4ab3fb13418736fe6, type: 3}
+  quantity: 9
   barrier: 150
   attribute:
     Str: 0

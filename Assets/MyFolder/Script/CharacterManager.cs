@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using MyFolder.Script.InventoryScript;
 using UnityEngine;
@@ -81,6 +82,28 @@ namespace MyFolder.Script
                 mp = new Stat { Value = 50, MaxValue = 50 },
                 exp = new Stat { Value = 90, MaxValue = 150 }
             });
+        }
+
+        public void ItemEquipped(int charNum,int equipmentNum)
+        {
+            Items item = ItemManager.instance.equippedItems[charNum][equipmentNum]; 
+            info[charNum].iAgi += item.attribute.Agi;
+            info[charNum].iInt += item.attribute.Int;
+            info[charNum].iLuk += item.attribute.Luk;
+            info[charNum].iStr += item.attribute.Str;
+            info[charNum].iVit += item.attribute.Vit;
+            info[charNum].iBar += item.barrier;
+        }
+
+        public void ItemUnequipped(int charNum, int equipmentNum)
+        {
+            Items item = ItemManager.instance.equippedItems[charNum][equipmentNum]; 
+            info[charNum].iAgi -= item.attribute.Agi;
+            info[charNum].iInt -= item.attribute.Int;
+            info[charNum].iLuk -= item.attribute.Luk;
+            info[charNum].iStr -= item.attribute.Str;
+            info[charNum].iVit -= item.attribute.Vit;
+            info[charNum].iBar -= item.barrier;
         }
     }
 }

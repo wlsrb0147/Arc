@@ -26,6 +26,7 @@ namespace MyFolder.Script
         public Image[] inventoryContents;
 
         public Text[] tab11Text;
+        public Text[] tab12Text;
 
         public GameObject[] faceBox;
         public Image[] faceInBox;
@@ -65,22 +66,25 @@ namespace MyFolder.Script
         public int tempSelectedLeftButton;
         public int tobButtonMax;
         public int selectedLeftButton;
-        [FormerlySerializedAs("istabChanged")] public bool isSomethingChanged;
+        public bool isSomethingChanged = true;
 
         public Inventory inven;
         public Battle battle;
         public Field field;
         public float left;
-        private readonly bool isBattleActive = false;
-        private string currentNotUseSelect = "";
-        private string currentSelect = "";
+        private bool _isBattleActive = false;
+        private string _currentNotUseSelect = "";
+        private string _currentSelect = "";
 
-        private int expireTab;
+        private int _expireTab;
+        private int _currentTab;
+        
+        private bool _isFieldActive = true;
+        private bool _isInvenActive;
+        private bool _isInvenContentsChanged;
 
-        private bool isFieldActive = true;
-        private bool isInvenActive;
-        private bool isInvenContentsChanged;
-
+        public bool needWait = false;
+        
         private void Awake()
         {
             // 만약 instance가 비어있지 않고 현재 인스턴스와 다르다면 (이미 다른 인스턴스가 존재한다면)
@@ -246,19 +250,19 @@ namespace MyFolder.Script
         private void Update()
         {
             // 배틀중에는 인벤 사용불가
-            if (Input.GetKeyDown(KeyCode.I) && isBattleActive == false)
+            if (Input.GetKeyDown(KeyCode.I) && _isBattleActive == false)
             {
-                isInvenActive = !isInvenActive;
-                isFieldActive = !isFieldActive;
+                _isInvenActive = !_isInvenActive;
+                _isFieldActive = !_isFieldActive;
             }
 
-            if (Input.GetKeyDown(KeyCode.Escape) && isInvenActive)
+            if (Input.GetKeyDown(KeyCode.Escape) && _isInvenActive)
             {
-                isInvenActive = false;
-                isFieldActive = true;
+                _isInvenActive = false;
+                _isFieldActive = true;
             }
 
-            if (isInvenActive)
+            if (_isInvenActive)
             {
                 Time.timeScale = 0;
                 inven.invenPanel.SetActive(true);
@@ -270,7 +274,7 @@ namespace MyFolder.Script
                 inven.invenPanel.SetActive(false);
             }
 
-            if (isFieldActive)
+            if (_isFieldActive)
             {
                 field.fieldPanel.SetActive(true);
                 Field();
@@ -296,59 +300,62 @@ namespace MyFolder.Script
                     return;
                 }
 
-                isInvenContentsChanged = true;
+                _isInvenContentsChanged = true;
                 isSomethingChanged = false;
+                
             }
-
-            // 
-            if (isInvenContentsChanged) // 탭이 변경됐을 때 실행
+            if (_isInvenContentsChanged && !needWait) // 탭이 변경됐을 때 실행
             {
                 ChangeInven(selectedLeftButton, selectedTopButton,
                     tempSelectedLeftButton, tempSelectedTopButton);
                 selectedLeftButton = tempSelectedLeftButton;
                 selectedTopButton = tempSelectedTopButton;
-                isInvenContentsChanged = false;
-// 여기까지였던 대괄호를 맨아래까지 묶음
+                
+                _isInvenContentsChanged = false;
+                
+                // 여기까지였던 대괄호를 맨아래까지 묶음
                 if (selectedLeftButton == 10)
-                    ChangeFace(ref currentSelect, Inventory.selectFaceName, inven.check.transform);
+                {
+                    ChangeFace(ref _currentSelect, Inventory.selectFaceName, inven.check.transform);
+                }
 
                 if (selectedLeftButton + selectedTopButton == 11)
                 {
                     inven.inventoryContents[0].sprite = Status[Inventory.selectFaceName];
+                    ItemManager.instance.RefreshEquipment();
                     ChangeTab11Stat();
                 }
-
                 if (selectedLeftButton + selectedTopButton == 12)
+                {
                     inven.eqipmentImg.sprite = Equipments[Inventory.selectFaceName];
-
+                    ItemManager.instance.RefreshItem();
+                    ChangeTab12Stat();
+                }
                 if (selectedLeftButton + selectedTopButton == 13)
+                {
                     inven.charactersState.text = nameChange[Inventory.selectFaceName] + "의 상태";
-
+                    ItemManager.instance.RefreshItem();
+                }
                 if (selectedLeftButton + selectedTopButton == 15)
                 {
-                    ChangeFace(ref currentNotUseSelect, Inventory.tab15SelectName, inven.check2.transform);
                     inven.notUsingName.text = nameChange[Inventory.tab15SelectName];
+                    ChangeFace(ref _currentNotUseSelect, Inventory.tab15SelectName, inven.check2.transform);
                 }
             }
         }
 
         private void ChangeFace(ref string current, string change, Transform check)
-        {
+        {  // face의 그림 변경, 글자색 변경
             if (current == "") // 초기값 설정
                 current = change;
-
-            if (current != change)
-            {
-                faceInBox[current].sprite = faceInBoxSide[current];
-                nameInBox[current].color = new Color(255, 255, 255);
-                current = change;
-            }
-            else
-            {
-                faceInBox[current].sprite = faceInBoxFront[current];
-                check.position = box[current].transform.position - new Vector3(90, 10, 0);
-                nameInBox[change].color = colorSet[change];
-            }
+            
+            faceInBox[current].sprite = faceInBoxSide[current];
+            nameInBox[current].color = new Color(255, 255, 255);
+            current = change;
+            
+            faceInBox[current].sprite = faceInBoxFront[current];
+            nameInBox[change].color = colorSet[change];
+            check.position = box[current].transform.position - new Vector3(90, 10, 0);
         }
 
         private void ChangeInven(int disableLeft, int disableTop, int enableLeft, int enableTop)
@@ -359,11 +366,14 @@ namespace MyFolder.Script
                 LTap[enableLeft].SetActive(true);
             }
 
-            TTab[disableLeft + disableTop].SetActive(false);
-            TTab[enableLeft + enableTop].SetActive(true);
+            if (_currentTab != enableLeft + enableTop)
+            {
+                TTab[disableLeft + disableTop].SetActive(false);
+                TTab[enableLeft + enableTop].SetActive(true);
+                _currentTab = enableLeft + enableTop;
+            }
         }
 
-        // 레벨, 경험치/맥스경험치, 아머/맥스아머, hp/maxhp, 힘민능스피드럭 , 공방마법스피드크리
         private void ChangeTab11Stat()
         {
             inven.tab11Text[0].text = stats[Inventory.selectFaceName].Level.ToString();
@@ -382,6 +392,16 @@ namespace MyFolder.Script
             inven.tab11Text[11].text = stats[Inventory.selectFaceName].Mag.ToString();
             inven.tab11Text[12].text = stats[Inventory.selectFaceName].Spd.ToString();
             inven.tab11Text[13].text = stats[Inventory.selectFaceName].Cri.ToString();
+        }
+
+        private void ChangeTab12Stat()
+        {
+            inven.tab12Text[0].text = stats[Inventory.selectFaceName].Bar.ToString();
+            inven.tab12Text[1].text = stats[Inventory.selectFaceName].Atk.ToString();
+            inven.tab12Text[2].text = stats[Inventory.selectFaceName].Def.ToString();
+            inven.tab12Text[3].text = stats[Inventory.selectFaceName].Spd.ToString();
+            inven.tab12Text[4].text = stats[Inventory.selectFaceName].Mag.ToString();
+            inven.tab12Text[5].text = stats[Inventory.selectFaceName].Cri.ToString();
         }
 
         public CharacterType GetType(string characterName)

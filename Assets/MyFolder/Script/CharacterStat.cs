@@ -36,30 +36,4 @@ namespace MyFolder.Script
         public int Cri => charBase.Luk + iLuk;
         public int Bar => iBar;
     }
-
-    public class ItemSlot
-    {
-        public CharacterType characterType;
-
-        public ItemSlot(CharacterType characterType)
-        {
-            this.characterType = characterType;
-        }
-
-        public Items EquippedItems { get; private set; }
-        public ItemType AllowedItemType { get; }
-
-
-        public bool Equip(Items items)
-        {
-            if (characterType == (items.allowedCharacterType & characterType))
-            {
-                if (EquippedItems == null) EquippedItems = items;
-
-                return true;
-            }
-
-            return false;
-        }
-    }
 }

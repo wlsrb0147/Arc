@@ -1,3 +1,4 @@
+using MyFolder.Script.InventoryScript;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -84,6 +85,7 @@ namespace MyFolder.Script
 
         public void OnPointerUp(PointerEventData eventData)
         {
+            InventoryCommander.instance.FaceClick();
             // 좌클릭 포인터 업
             if (eventData.button == PointerEventData.InputButton.Left)
             {
@@ -106,6 +108,7 @@ namespace MyFolder.Script
                 {
                     if (Inventory.notUsing.Count < 8)
                     {
+                        UI_Manager.instance.needWait = true;
                         transform.SetParent(tab15Parent);
                         Inventory.notUsing.Add(transform);
                         characterUsing = false;
@@ -117,15 +120,20 @@ namespace MyFolder.Script
                 {
                     if (Inventory.notUsing.Count > 3)
                     {
+                        UI_Manager.instance.needWait = true;       
                         transform.SetParent(originalParent);
                         Inventory.notUsing.Remove(transform);
                         characterUsing = true;
-                        Inventory.tab15SelectName = Inventory.notUsing[0].name;
+                        if (!Inventory.notUsing.Find(i=>i.name == Inventory.tab15SelectName))
+                        {
+                            Inventory.tab15SelectName = Inventory.notUsing[0].name;
+                        }
                         transform.position = pos[8 - Inventory.notUsing.Count].position;
                         Inventory.needSort = true;
                     }
                 }
             }
+            UI_Manager.instance.isSomethingChanged = true;
         }
     }
 }

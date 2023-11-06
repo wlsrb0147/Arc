@@ -22,11 +22,11 @@ public class BT_Manager : MonoBehaviour
 
     public void CreateItem()
     {
-        InventoryCommander.instance.CreateItemCommand();
+        InventoryCommander.CreateItemCommand();
     }
 
     public void DeleteItem()
     {
-        InventoryCommander.instance.DeleteItemCommand();
+        InventoryCommander.DeleteItemCommand();
     }
 }

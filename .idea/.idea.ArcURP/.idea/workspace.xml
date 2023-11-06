@@ -5,30 +5,31 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ec43064-8ed8-4326-9813-392b95e1259a" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF/Maplestory Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF/Maplestory Bold.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF/Maplestory Light.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF/Maplestory Light.ttf.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquippedItem.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquippedItem.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Editor/CS8032WarningFixer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Editor/CS8032WarningFixer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Barriorg.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Barriorg.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Ironbracerleet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Ironbracerleet.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Protecring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Protecring.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Spiritulring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Spiritulring.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/spiralring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/spiralring.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Prefabs/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Prefabs/Item.prefab" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/BT_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/BT_Manager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/Child.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/Child.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/Common items.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/Common items.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceEventTriggerScr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceEventTriggerScr.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceSorting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceSorting.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Enums.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Enums.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/InventoryCommander.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/InventoryCommander.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Items.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Items.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/Leader.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/Leader.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/SprTransParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/SprTransParent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/UI_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/UI_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/CameraTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/CameraTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/CharacterMoveTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/CharacterMoveTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/MovingTest.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/MovingTest.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Test/test.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Test/test.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/TutorialInfo/Scripts/Readme.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,9 +56,12 @@
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/FaceSorting.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Enums.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquippedItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/SprTransParent.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/Manager.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/SetChangedStat0.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.render-pipelines.universal@14.0.8/Editor/2D/SortingLayerDropDown.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.timeline@1.7.4/Editor/treeview/Drawers/Layers/ItemsLayer.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/EventInterfaces.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.ugui@1.0.0/Runtime/EventSystem/UIBehaviour.cs" root0="SKIP_HIGHLIGHTING" />
@@ -83,30 +87,31 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;XThreadsFramesViewSplitterKey&quot;: &quot;0.8316062&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;ignore.virus.scanning.warn.message&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.keymap&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "XThreadsFramesViewSplitterKey": "0.8316062",
+    "git-widget-placeholder": "main",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "preferences.keymap",
+    "vue.rearranger.settings.migration": "true"
   },
-  &quot;keyToStringList&quot;: {
-    &quot;rider.external.source.directories&quot;: [
-      &quot;C:\\Users\\wlsrb\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache&quot;,
-      &quot;C:\\Users\\wlsrb\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache&quot;,
-      &quot;C:\\Users\\wlsrb\\AppData\\Local\\Symbols\\src&quot;
+  "keyToStringList": {
+    "rider.external.source.directories": [
+      "C:\\Users\\wlsrb\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\DecompilerCache",
+      "C:\\Users\\wlsrb\\AppData\\Roaming\\JetBrains\\Rider2023.2\\resharper-host\\SourcesCache",
+      "C:\\Users\\wlsrb\\AppData\\Local\\Symbols\\src"
     ]
   }
-}</component>
+}]]></component>
   <component name="RunManager" selected="Unity 에디터에 연결.Unity 에디터에 연결">
     <configuration name="유닛 테스트(배치 모드)" type="RunUnityExe" factoryName="Unity Executable">
       <option name="EXE_PATH" value="C:\Program Files\Unity\Hub\Editor\2022.3.2f1\Editor\Unity.exe" />
@@ -193,7 +198,9 @@
       <workItem from="1698495163983" duration="5638000" />
       <workItem from="1698550362529" duration="61415000" />
       <workItem from="1698815300464" duration="1431000" />
-      <workItem from="1698816744229" duration="2526000" />
+      <workItem from="1698816744229" duration="38622000" />
+      <workItem from="1698931822733" duration="1616000" />
+      <workItem from="1698983597119" duration="46760000" />
     </task>
     <servers />
   </component>
