@@ -42,25 +42,27 @@ namespace MyFolder.Script.InventoryScript
         public void OnPointerClick(PointerEventData eventData)
         {
             InventoryCommander.instance.SelectedInvenItemName = gameObject.name;
-
+            
             switch (eventData.button) // 인벤토리 아이템 클릭
             {
                 case PointerEventData.InputButton.Left:
                 {
                     if (Time.unscaledTime - _timer < 0.5f)
-                        InventoryCommander.instance.ClickType(ClickType.DoubleLeftClick,false);
+                        InventoryCommander.instance.ClickType(ClickType.DoubleLeftClick, false);
                     else
                     {
-                        InventoryCommander.instance.ClickType(ClickType.LeftClick,false);
+                        InventoryCommander.instance.ClickType(ClickType.LeftClick, false);
                     }
+
                     _timer = Time.unscaledTime;
                     break;
                 }
 
                 case PointerEventData.InputButton.Right:
-                    InventoryCommander.instance.ClickType(ClickType.RightClick,false);
+                    InventoryCommander.instance.ClickType(ClickType.RightClick, false);
                     break;
             }
+            
         }
     
     }

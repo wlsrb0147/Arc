@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -16,6 +17,14 @@ namespace MyFolder.Script.InventoryScript
                 instance = this;
 
             DontDestroyOnLoad(gameObject);
+        }
+
+        private void Start()
+        {
+            foreach (var items in Allitems)
+            {
+                items.bookmark = false;
+            }
         }
     }
 }

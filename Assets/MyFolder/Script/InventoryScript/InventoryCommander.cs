@@ -65,6 +65,14 @@ namespace MyFolder.Script.InventoryScript
         {
             Reset();
         }
+
+        public void BookmarkCommand()
+        {
+            ItemManager.instance.ToggleItem(SelectedInvenItemName);
+            ItemManager.instance.RefreshItem();
+        }
+        
+        
         
         public void ClickType(ClickType clickType,bool isEquipped)
         {

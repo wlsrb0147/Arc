@@ -5,31 +5,27 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ec43064-8ed8-4326-9813-392b95e1259a" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF/Maplestory Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF/Maplestory Bold.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF/Maplestory Light.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/MaplestoryFont_TTF/Maplestory Light.ttf.meta" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquippedItem.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquippedItem.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Materials/New Material.mat.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/25424.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/25424.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Bookmark.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Bookmark.cs.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/heart1.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/heart1.png.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/heart2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/MyFolder/heart2.png.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Barriorg.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Barriorg.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Ironbracerleet.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Ironbracerleet.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Protecring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Protecring.asset" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/eluard (3).mat" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Materials/eluard (3).mat.meta" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Spiritulring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/Spiritulring.asset" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/spiralring.asset" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Equipments/Accessory/spiralring.asset" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Prefabs/Item.prefab" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Prefabs/Item.prefab" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/BT_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/BT_Manager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceEventTriggerScr.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceEventTriggerScr.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceSorting.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/FaceSorting.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/InventoryCommander.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/InventoryCommander.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemDatabase.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/SprTransParent.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/SprTransParent.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/UI_Manager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/UI_Manager.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Items.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Items.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +51,7 @@
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/CharacterManager.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/CharacterStat.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/FaceSorting.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Bookmark.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/Enums.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/EquippedItem.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemEvent.cs" root0="FORCE_HIGHLIGHTING" />
@@ -200,7 +197,7 @@
       <workItem from="1698815300464" duration="1431000" />
       <workItem from="1698816744229" duration="38622000" />
       <workItem from="1698931822733" duration="1616000" />
-      <workItem from="1698983597119" duration="46760000" />
+      <workItem from="1698983597119" duration="53886000" />
     </task>
     <servers />
   </component>

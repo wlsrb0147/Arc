@@ -6,6 +6,7 @@ public class Items : ScriptableObject
 {
     public ItemType itemType;
     public CharacterType allowedCharacterType;
+    public bool bookmark = false;
     
     public string ItemName;
     public Sprite ItemIcon;

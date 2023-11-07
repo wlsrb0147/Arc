@@ -21,6 +21,7 @@ namespace MyFolder.Script.InventoryScript
         public GameObject[] check;
         public Image[] upAndDownImage;
         public Text[] upAndDownValue;
+        public Sprite heart;
         
         private readonly Dictionary<CharacterType, int> _charType2Int = new();
         private readonly Dictionary<ItemType, int> _itemType2Int = new();
@@ -188,6 +189,12 @@ namespace MyFolder.Script.InventoryScript
         {
             var item = inventoryItems.Find(i => i.ItemName == itemName);
             return item;
+        }
+
+        public void ToggleItem(string itemName)
+        {
+            var item = inventoryItems.Find(i => i.ItemName == itemName);
+            item.bookmark = !item.bookmark;
         }
 
         public void CalculateItemValue(int item)
@@ -375,16 +382,20 @@ namespace MyFolder.Script.InventoryScript
 
             foreach (var items in inventoryItems)
             {
+                // if문, 조건 사용, Enum사용해야할듯
                 var slotPrefab = Instantiate(itemSlot, content);
                 slotPrefab.name = items.ItemName;
                     
                 var item1 = slotPrefab.transform.GetChild(0).GetComponent<Text>();
                 var item2 = slotPrefab.transform.GetChild(1).GetComponent<Text>();
                 var item3 = slotPrefab.transform.GetChild(2).GetComponent<Image>();
+                var item4 = slotPrefab.transform.GetChild(3).GetComponent<Image>();
                 
                 item1.text = items.ItemName;
                 item2.text = items.quantity.ToString();
                 item3.sprite = items.ItemIcon;
+                if (items.bookmark) { item4.sprite = heart; }
+                item4.name = items.ItemName;
                 
                 // 착용가능여부 재고, if문으로 text 색깔을 정해야함
                 var currentCharacter = UI_Manager.instance.GetType(Inventory.selectFaceName);
