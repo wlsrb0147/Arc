@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: barisada
   m_EditorClassIdentifier: 
-  itemType: 4
+  itemType: 1
   allowedCharacterType: 177
+  bookmark: 0
   ItemName: "\uBC14\uB9AC\uC0AC\uB2E4"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: ee29aabc81d470a498f6a3f9caa4b5e5, type: 3}
+  quantity: 1
   barrier: 19
   attribute:
     Str: 20

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: mace_
   m_EditorClassIdentifier: 
-  itemType: 4
+  itemType: 1
   allowedCharacterType: 177
+  bookmark: 0
   ItemName: "\uBA54\uC774\uC2A4"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 9923a64a1003c9940b5b1880432e5100, type: 3}
+  quantity: 1
   barrier: 9
   attribute:
     Str: 10

@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: katana
   m_EditorClassIdentifier: 
-  itemType: 12
+  itemType: 2
   allowedCharacterType: 48
+  bookmark: 0
   ItemName: "\uCE74\uD0C0\uB098"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 93942e157bd41b04a9c5877125633cdb, type: 3}
+  quantity: 1
   barrier: 80
   attribute:
     Str: 200

@@ -29,4 +29,40 @@ public class BT_Manager : MonoBehaviour
     {
         InventoryCommander.DeleteItemCommand();
     }
+
+    public void CancelFilter()
+    {
+        InventoryCommander.instance.CancelFilter();
+    }
+
+    public void ApplyFilter()
+    {
+        InventoryCommander.instance.ApplyFilter();
+    }
+
+    public void ActiveFilterTab()
+    {
+        InventoryCommander.instance.ActiveFilterTab();
+    }
+
+    public void CharToggle(int value)
+    {
+        InventoryCommander.instance.SetCharType(value);
+    }
+
+    public void EquToggle(int value)
+    {
+        InventoryCommander.instance.SetItemType(value);
+    }
+
+    public void AllItemCheck(bool value)
+    { 
+        InventoryCommander.instance.AllItemCheck(value);   
+    }
+
+    public void AllCharCheck(bool value)
+    {
+        InventoryCommander.instance.AllCharCheck(value);
+    }
+    
 }

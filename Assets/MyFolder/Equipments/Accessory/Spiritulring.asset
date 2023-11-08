@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: Spiritulring
   m_EditorClassIdentifier: 
-  itemType: 64
+  itemType: 128
   allowedCharacterType: -1
   bookmark: 1
   ItemName: "\uC2A4\uD53C\uB9AC\uCD94\uC5BC \uB9C1"

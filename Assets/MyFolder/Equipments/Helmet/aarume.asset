@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: aarume
   m_EditorClassIdentifier: 
-  itemType: 1
+  itemType: 8
   allowedCharacterType: 304
+  bookmark: 0
   ItemName: "\uC544\uB8E8\uBA54"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 4861950fe176e3d49b0979e8977852fe, type: 3}
+  quantity: 1
   barrier: 100
   attribute:
     Str: 100

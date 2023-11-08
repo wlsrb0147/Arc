@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: plate__helm
   m_EditorClassIdentifier: 
-  itemType: 1
+  itemType: 8
   allowedCharacterType: 312
+  bookmark: 0
   ItemName: "\uD310\uAE08 \uD5EC\uB984"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: c410c9f52a0050d469e705deb51c886e, type: 3}
+  quantity: 1
   barrier: 200
   attribute:
     Str: 15

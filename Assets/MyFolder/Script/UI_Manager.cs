@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using MyFolder.Script.InventoryScript;
+using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -44,6 +45,8 @@ namespace MyFolder.Script
 
         public Text charactersState;
         public Text notUsingName;
+
+        public GameObject filterPanel;
     }
 
     [Serializable]
@@ -287,6 +290,16 @@ namespace MyFolder.Script
 
         private void Field()
         {
+        }
+
+        public void FilterOn()
+        {
+            inven.filterPanel.SetActive(true);
+        }
+
+        public void FilterOff()
+        {
+            inven.filterPanel.SetActive(false);
         }
 
         private void Inven()

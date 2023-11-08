@@ -18,7 +18,6 @@ namespace MyFolder.Script.InventoryScript
                 Destroy(gameObject);
         }
         
-
         public void HandleSlotTextColor(bool enter, int slotNum)
         {
             switch (slotNum)
@@ -66,13 +65,16 @@ namespace MyFolder.Script.InventoryScript
             Reset();
         }
 
+        public void FilterPanelEnabled()
+        {
+            ItemManager.instance.SaveCurrentOn();
+        }
+        
         public void BookmarkCommand()
         {
             ItemManager.instance.ToggleItem(SelectedInvenItemName);
             ItemManager.instance.RefreshItem();
         }
-        
-        
         
         public void ClickType(ClickType clickType,bool isEquipped)
         {
@@ -119,5 +121,42 @@ namespace MyFolder.Script.InventoryScript
         {
             ItemManager.instance.DeleteItem();
         }
+
+        public void CancelFilter()
+        {
+            ItemManager.instance.DiscardFilter();
+            UI_Manager.instance.FilterOff();
+        }
+
+        public void ApplyFilter()
+        {
+            ItemManager.instance.ApplyFilter();
+            UI_Manager.instance.FilterOff();
+        }
+
+        public void SetItemType(int type)
+        {
+            ItemManager.instance.ItemFilter(type);
+        }
+
+        public void SetCharType(int type)
+        {
+            ItemManager.instance.CharFilter(type);
+        }
+        public void ActiveFilterTab()
+        {
+            UI_Manager.instance.FilterOn();
+        }
+
+        public void AllItemCheck(bool Value)
+        {
+          ItemManager.instance.ItemAll(Value);   
+        }
+        
+        public void AllCharCheck(bool Value)
+        {
+            ItemManager.instance.CharAll(Value);
+        }
+        
     }
 }

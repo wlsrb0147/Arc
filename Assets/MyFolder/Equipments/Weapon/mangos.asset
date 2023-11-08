@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: mangos
   m_EditorClassIdentifier: 
-  itemType: 4
+  itemType: 1
   allowedCharacterType: 195
+  bookmark: 0
   ItemName: "\uB9DD\uACE0\uC2A4"
   ItemIcon: {fileID: 21300000, guid: 43f9caa01c1403242b8723867b9f64d1, type: 3}
   quantity: 4

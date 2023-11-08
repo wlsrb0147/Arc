@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using JetBrains.Annotations;
 using TMPro.EditorUtilities;
+using Unity.Collections;
+using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
 using UnityEngine.Serialization;
 using UnityEngine.UI;
@@ -27,7 +29,31 @@ namespace MyFolder.Script.InventoryScript
         private readonly Dictionary<ItemType, int> _itemType2Int = new();
         public readonly Items[][] equippedItems = new Items[9][];
         private const string DefaultText = "(Beer있음)";
+
         
+        public Toggle[] charFilter;
+        public Toggle[] equFilter;
+        private int _charFilter = 0b111111111;
+        private int _itemFilter = 0b111111111;
+        private int _tempCharFilter = 0; // 필터의 임시값
+        private int _tempItemFilter = 0; // 필터의 임시값
+        private static readonly int[] CharWeight;
+        private static readonly int[] EquWeight;
+        private readonly bool[] _charFilterBool = new bool[9]; // toggle의 처음 bool값을 저장
+        private readonly bool[] _equFilterBool = new bool[9]; // toggle의 처음 bool값을 저장
+        private readonly int[] _charSign = new int[9];
+        private readonly int[] _itemSign = new int[9];
+        private readonly int[] _savedCharSign = new int[9];
+        private readonly int[] _savedEquSign = new int[9];
+
+        public Toggle Bookmark;
+
+        static ItemManager()
+        {
+            EquWeight = new[] {1,2,4,8,16,32,64,128,256};
+            CharWeight = new[] {1,2,4,8,16,32,64,128,256};
+        }
+
         private void Awake()
         {
             if (instance == null)
@@ -61,6 +87,8 @@ namespace MyFolder.Script.InventoryScript
             for (var i = 0; i < 9; i++)
             {
                 equippedItems[i] = new Items[8];
+                _charSign[i] = 1;
+                _itemSign[i] = 1;
             }
         }
 
@@ -154,7 +182,6 @@ namespace MyFolder.Script.InventoryScript
                 check[index].SetActive(transform);
             }
         }
-
         
         private Items GetItemInfo(int index)
         {
@@ -324,7 +351,6 @@ namespace MyFolder.Script.InventoryScript
             }
         }
         
-        
         public void UnequipItemBySlot(int index)
         {
             var dual = DetermineEquippedSelectedItem(index);
@@ -379,38 +405,57 @@ namespace MyFolder.Script.InventoryScript
             var content = content1.gameObject.activeInHierarchy ? content1 : content2;
 
             foreach (Transform child in content) Destroy(child.gameObject); // 기존 UI 삭제
-
+            
+            var iFilter = _itemFilter == 0 ? 0b111111111 : _itemFilter;
+            var cFilter = _charFilter == 0 ? 0b111111111 : _charFilter;
+            
+            
             foreach (var items in inventoryItems)
             {
-                // if문, 조건 사용, Enum사용해야할듯
-                var slotPrefab = Instantiate(itemSlot, content);
-                slotPrefab.name = items.ItemName;
+                if ((items.itemType & (ItemType)iFilter) != 0 &&
+                    (items.allowedCharacterType & (CharacterType)cFilter) != 0)
+                {
+
+                    if (Bookmark.isOn && !items.bookmark) { continue; }
+                    var slotPrefab = Instantiate(itemSlot, content);
                     
-                var item1 = slotPrefab.transform.GetChild(0).GetComponent<Text>();
-                var item2 = slotPrefab.transform.GetChild(1).GetComponent<Text>();
-                var item3 = slotPrefab.transform.GetChild(2).GetComponent<Image>();
-                var item4 = slotPrefab.transform.GetChild(3).GetComponent<Image>();
-                
-                item1.text = items.ItemName;
-                item2.text = items.quantity.ToString();
-                item3.sprite = items.ItemIcon;
-                if (items.bookmark) { item4.sprite = heart; }
-                item4.name = items.ItemName;
-                
-                // 착용가능여부 재고, if문으로 text 색깔을 정해야함
-                var currentCharacter = UI_Manager.instance.GetType(Inventory.selectFaceName);
-                if ((currentCharacter & items.allowedCharacterType) != currentCharacter )
-                {
-                    item1.color = new Color(0.7f,0.7f,0.7f,1f);
-                    item2.color = new Color(0.7f,0.7f,0.7f,1f);
-                }
-                else
-                {
-                    item1.color = Color.black;
-                    item2.color = Color.black;
+                    // if문, 조건 사용, Enum사용해야할듯
+                    
+                    
+                    
+                    slotPrefab.name = items.ItemName;
+
+                    var item1 = slotPrefab.transform.GetChild(0).GetComponent<Text>();
+                    var item2 = slotPrefab.transform.GetChild(1).GetComponent<Text>();
+                    var item3 = slotPrefab.transform.GetChild(2).GetComponent<Image>();
+                    var item4 = slotPrefab.transform.GetChild(3).GetComponent<Image>();
+
+                    item1.text = items.ItemName;
+                    item2.text = items.quantity.ToString();
+                    item3.sprite = items.ItemIcon;
+                    if (items.bookmark)
+                    {
+                        item4.sprite = heart;
+                        item4.color = new Color(1, 1, 1, 1);
+                    }
+
+                    item4.name = items.ItemName;
+
+                    // 착용가능여부 재고, if문으로 text 색깔을 정해야함
+                    var currentCharacter = UI_Manager.instance.GetType(Inventory.selectFaceName);
+                    if ((currentCharacter & items.allowedCharacterType) != currentCharacter)
+                    {
+                        item1.color = new Color(0.7f, 0.7f, 0.7f, 1f);
+                        item2.color = new Color(0.7f, 0.7f, 0.7f, 1f);
+                    }
+                    else
+                    {
+                        item1.color = Color.black;
+                        item2.color = Color.black;
+                    }
                 }
             }
-            
+
             RefreshEquipment();
         }
         
@@ -422,7 +467,7 @@ namespace MyFolder.Script.InventoryScript
             {
                 var currentItem = equippedItems[charIndex][i];
 
-                if (currentItem == null)
+                if (!currentItem)
                 {
                     equipmentsImg[i].sprite = null;
                     equipmentsText[i].text = DefaultText;
@@ -458,7 +503,96 @@ namespace MyFolder.Script.InventoryScript
                 equipmentsText[13].text = equippedItems[charIndex][1].ItemName;
             }
 
-        } 
+        }
+
+        public void ItemFilter(int value)
+        {
+            _itemSign[value] *= -1;
+            _tempItemFilter += EquWeight[value] * _itemSign[value];
+        }
+        
+        public void CharFilter(int value)
+        {
+            _charSign[value] *= -1;
+            _tempCharFilter += CharWeight[value] * _charSign[value];
+        }
+
+        public void ItemAll(bool value)
+        {
+            if (value)
+            {
+                for (int i = 0; i < 9; i++)
+                {
+                    equFilter[i].isOn = true;
+                    _itemSign[i] = 1;
+                }   
+                _tempItemFilter = 0b111111111 - _itemFilter;
+            }
+            else
+            {
+                for (int i = 0; i < 9; i++)
+                {
+                    equFilter[i].isOn = false;
+                    _itemSign[i] = -1;
+                } 
+                _tempItemFilter = -_itemFilter ;
+            }
+        }
+
+        public void CharAll(bool value)
+        {
+            if (value)
+            {
+                for (int i = 0; i < 9; i++)
+                {
+                    charFilter[i].isOn = true;
+                    _charSign[i] = 1;
+                } 
+                _tempCharFilter = 0b111111111 - _charFilter;
+            }
+            else
+            {
+                for (int i = 0; i < 9; i++)
+                {
+                    charFilter[i].isOn = false;
+                    _charSign[i] = -1;
+                }
+                _tempCharFilter = -_charFilter;
+            }
+        }
+        
+        public void ApplyFilter()
+        {
+            _charFilter += _tempCharFilter;
+            _itemFilter += _tempItemFilter;
+            _tempCharFilter = 0;
+            _tempItemFilter = 0;
+            RefreshItem();
+        }
+
+        public void DiscardFilter()
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                charFilter[i].isOn = _charFilterBool[i];
+                equFilter[i].isOn = _equFilterBool[i];
+                _charSign[i] = _savedCharSign[i];
+                _itemSign[i] = _savedEquSign[i];
+            }
+            _tempCharFilter = 0;
+            _tempItemFilter = 0;
+        }
+
+        public void SaveCurrentOn()
+        {
+            for (int i = 0; i < 9; i++)
+            {
+                _charFilterBool[i] = charFilter[i].isOn;
+                _equFilterBool[i] = equFilter[i].isOn;
+                _savedCharSign[i] = _charSign[i];
+                _savedEquSign[i] = _itemSign[i];
+            }
+        }
         
         private void EquipItemToCharacter(Items items)
         {

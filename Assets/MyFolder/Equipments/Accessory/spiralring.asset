@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: spiralring
   m_EditorClassIdentifier: 
-  itemType: 64
+  itemType: 128
   allowedCharacterType: 129
+  bookmark: 0
   ItemName: "\uC2A4\uD30C\uC774\uB7F4 \uB9C1"
   ItemIcon: {fileID: 21300000, guid: 44aac708537fc0d4880dfb1eec02755f, type: 3}
   quantity: 11

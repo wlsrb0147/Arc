@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: bastardsword
   m_EditorClassIdentifier: 
-  itemType: 4
+  itemType: 1
   allowedCharacterType: 177
+  bookmark: 0
   ItemName: "\uBC14\uC2A4\uD0C0\uB4DC \uC18C\uB4DC"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 1c9c28400b7f32042bed445f96ad6bfc, type: 3}
+  quantity: 1
   barrier: 25
   attribute:
     Str: 26

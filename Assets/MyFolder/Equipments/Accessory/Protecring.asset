@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: Protecring
   m_EditorClassIdentifier: 
-  itemType: 64
+  itemType: 128
   allowedCharacterType: 382
+  bookmark: 0
   ItemName: "\uD504\uB85C\uD14D\uD2B8 \uB9C1"
   ItemIcon: {fileID: 21300000, guid: 10c15997cb034f34eb5892ae78c5ba00, type: 3}
   quantity: 9

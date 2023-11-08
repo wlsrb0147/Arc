@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: holywp
   m_EditorClassIdentifier: 
-  itemType: 4
+  itemType: 1
   allowedCharacterType: 8
+  bookmark: 0
   ItemName: "\uD640\uB9AC\uD729"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 7f440ae66c7edde43a4c6676823b35a6, type: 3}
+  quantity: 1
   barrier: 6
   attribute:
     Str: 7

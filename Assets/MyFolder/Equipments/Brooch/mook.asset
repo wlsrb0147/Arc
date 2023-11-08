@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: mook
   m_EditorClassIdentifier: 
-  itemType: 2
+  itemType: 64
   allowedCharacterType: -1
+  bookmark: 0
   ItemName: "\uBB35\uC8FC"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 632843e36b4c21f4c89247174ab7b9b5, type: 3}
+  quantity: 1
   barrier: 10
   attribute:
     Str: 5

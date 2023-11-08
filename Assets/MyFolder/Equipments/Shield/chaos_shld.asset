@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: chaos_shld
   m_EditorClassIdentifier: 
-  itemType: 8
+  itemType: 4
   allowedCharacterType: 185
+  bookmark: 0
   ItemName: "\uCE74\uC624\uC2A4 \uC2E4\uB4DC"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: fef53884fd1e1504b86f95cd09c22d89, type: 3}
+  quantity: 1
   barrier: 150
   attribute:
     Str: 60

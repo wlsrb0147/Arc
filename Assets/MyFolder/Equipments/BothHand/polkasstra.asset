@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: polkasstra
   m_EditorClassIdentifier: 
-  itemType: 12
+  itemType: 2
   allowedCharacterType: 385
+  bookmark: 0
   ItemName: "\uD50C\uB9AC\uCE74\uC2A4\uD2B8\uB77C"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 4200338b609ecc94ebaafa0ed4907f6d, type: 3}
+  quantity: 1
   barrier: 50
   attribute:
     Str: 150

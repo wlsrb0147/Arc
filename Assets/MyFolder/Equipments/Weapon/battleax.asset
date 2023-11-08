@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: battleax
   m_EditorClassIdentifier: 
-  itemType: 4
+  itemType: 1
   allowedCharacterType: 48
+  bookmark: 0
   ItemName: "\uBC30\uD2C0\uC5D1\uC2A4"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 8f45601954a26c842859cc4935984d60, type: 3}
+  quantity: 1
   barrier: 2
   attribute:
     Str: 3

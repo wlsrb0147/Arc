@@ -12,12 +12,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f1ac6894c17d2f488aadbfebee47de3, type: 3}
   m_Name: Ringofwitc
   m_EditorClassIdentifier: 
-  itemType: 64
+  itemType: 128
   allowedCharacterType: 129
+  bookmark: 0
   ItemName: "\uB9C8\uB140\uC758 \uBC18\uC9C0"
-  ItemNameText: {fileID: 0}
-  ItemImage: {fileID: 0}
   ItemIcon: {fileID: 21300000, guid: 58706188436218e4b8305c04c910fff2, type: 3}
+  quantity: 1
   barrier: 20
   attribute:
     Str: 0
