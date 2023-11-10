@@ -122,7 +122,7 @@ namespace MyFolder.Script.InventoryScript
             ItemManager.instance.DeleteItem();
         }
 
-        public void CancelFilter()
+        public void DiscardFilter()
         {
             ItemManager.instance.DiscardFilter();
             UI_Manager.instance.FilterOff();

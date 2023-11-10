@@ -46,14 +46,14 @@ namespace MyFolder.Script.InventoryScript
         private readonly int[] _savedCharSign = new int[9];
         private readonly int[] _savedEquSign = new int[9];
 
-        public Toggle Bookmark;
+        public Toggle bookmark;
 
         static ItemManager()
         {
             EquWeight = new[] {1,2,4,8,16,32,64,128,256};
             CharWeight = new[] {1,2,4,8,16,32,64,128,256};
         }
-
+    
         private void Awake()
         {
             if (instance == null)
@@ -416,7 +416,7 @@ namespace MyFolder.Script.InventoryScript
                     (items.allowedCharacterType & (CharacterType)cFilter) != 0)
                 {
 
-                    if (Bookmark.isOn && !items.bookmark) { continue; }
+                    if (bookmark.isOn && !items.bookmark) { continue; }
                     var slotPrefab = Instantiate(itemSlot, content);
                     
                     // if문, 조건 사용, Enum사용해야할듯

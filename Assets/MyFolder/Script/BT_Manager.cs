@@ -32,7 +32,7 @@ public class BT_Manager : MonoBehaviour
 
     public void CancelFilter()
     {
-        InventoryCommander.instance.CancelFilter();
+        InventoryCommander.instance.DiscardFilter();
     }
 
     public void ApplyFilter()

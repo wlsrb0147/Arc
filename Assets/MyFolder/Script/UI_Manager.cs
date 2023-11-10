@@ -255,14 +255,27 @@ namespace MyFolder.Script
             // 배틀중에는 인벤 사용불가
             if (Input.GetKeyDown(KeyCode.I) && _isBattleActive == false)
             {
+                tempSelectedLeftButton = 10;
+                tempSelectedTopButton = 1;
+                tobButtonMax = 5;
+                isSomethingChanged = true;
+                
+                
                 _isInvenActive = !_isInvenActive;
                 _isFieldActive = !_isFieldActive;
             }
 
-            if (Input.GetKeyDown(KeyCode.Escape) && _isInvenActive)
+            if (Input.GetKeyDown(KeyCode.Escape) && _isInvenActive && !inven.filterPanel.activeSelf)
             {
+                
                 _isInvenActive = false;
                 _isFieldActive = true;
+                
+            }
+            
+            if (Input.GetKeyDown(KeyCode.Escape) && inven.filterPanel.activeSelf)
+            {
+                InventoryCommander.instance.DiscardFilter();
             }
 
             if (_isInvenActive)
