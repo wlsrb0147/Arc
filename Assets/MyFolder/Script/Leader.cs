@@ -1,11 +1,12 @@
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace MyFolder.Script
 {
     public class Leader : MonoBehaviour
     {
-        public float test;
+        [FormerlySerializedAs("test")] public float LengthOfGroundCheck;
 
         private readonly float _gravity = -39.24f;
 
@@ -229,7 +230,7 @@ namespace MyFolder.Script
             var _mask = 1 << 3;
             _mask = ~_mask;
             var hit = Physics.BoxCast(startPos, halfExtents, Vector3.down, out var hitInfo,
-                Quaternion.Euler(0, _gizrot, 0), boxstate.y - test, _mask);
+                Quaternion.Euler(0, _gizrot, 0), boxstate.y - LengthOfGroundCheck, _mask);
             
             if (hit) {
                 Debug.Log(hitInfo.collider);
