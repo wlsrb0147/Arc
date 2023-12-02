@@ -22,10 +22,7 @@ namespace MyFolder.Script.InventoryScript
         {
             switch (slotNum)
             {
-                case 0:
-                case 2:
-                case 3:
-                case 4: 
+                case 0 or 2 or 3 or 4:
                     ItemManager.instance.ChangeColor(enter,slotNum);
                     break;
                 case 1:

@@ -54,23 +54,6 @@ public class Child : MonoBehaviour
         }
     }
 
-    private void OnDrawGizmos()
-    {
-        Gizmos.color = new Color(1, 0, 0, 0.5f);
-
-        _gizrot = -Vector2.SignedAngle(new Vector2(lookingPos.localPosition.x, lookingPos.localPosition.z),
-            new Vector2(1, 0));
-
-        // pos.position : 중심점, 중심점의 y축을 기준으로 gizrot만큼 회전, 스케일은 1,1,1 유지 
-        var finalTransform = Matrix4x4.TRS(pos.position, Quaternion.Euler(0, _gizrot, 0), Vector3.one);
-
-        // Gizmos의 매트릭스에 적용
-        Gizmos.matrix = finalTransform;
-
-        // 중심점에서 boxstate 사이즈로 생성
-        Gizmos.DrawCube(Vector3.zero, boxstate);
-    }
-
     private void Initialize()
     {
         _standardVec = cameraPos.position - transform.position;
@@ -96,7 +79,7 @@ public class Child : MonoBehaviour
 
         if (hit)
         {
-            if (angle < 65)
+            if (angle < 48)
                 onGround = true;
             else
                 onGround = false;
@@ -134,8 +117,15 @@ public class Child : MonoBehaviour
 
         var yChange = ypos - transform.position.y;
 
-        if (yChange < 0) _ani.SetFloat(MoveY, -1);
-        else if (yChange > 0) _ani.SetFloat(MoveY, 1);
+        switch (yChange)
+        {
+            case < 0:
+                _ani.SetFloat(MoveY, -1);
+                break;
+            case > 0:
+                _ani.SetFloat(MoveY, 1);
+                break;
+        }
         ypos = transform.position.y;
     }
 
@@ -160,10 +150,7 @@ public class Child : MonoBehaviour
     #region GroundCheck
 
     private float _gizrot;
-    public float down = 0.204f;
-    public float radius = 0.18f;
-
-    private Vector3 _boxcurrent;
+    
     public Vector3 boxstate = new(0.3f, 0.27f, 0.3f);
     public bool onGround;
 

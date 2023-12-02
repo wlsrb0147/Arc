@@ -197,28 +197,26 @@ namespace MyFolder.Script
 
         private void ChildControl()
         {
-            if (!onGround ||
-                !child[0].onGround || !child[1].onGround ||
-                !child[2].onGround || !child[3].onGround ||
-                !child[4].onGround || inputCheck)
+            if (onGround &&
+                child[0].onGround && child[1].onGround &&
+                child[2].onGround && child[3].onGround &&
+                child[4].onGround && !inputCheck) return;
+            var input = new RbV3
             {
-                var input = new RbV3
-                {
-                    pos = transform.position,
-                    lookingPos = lookingPos.localPosition
-                };
+                pos = transform.position,
+                lookingPos = lookingPos.localPosition
+            };
 
-                while (_inputs.Count > _maxDelay[5]) _inputs.RemoveAt(_inputs.Count - 1);
+            while (_inputs.Count > _maxDelay[5]) _inputs.RemoveAt(_inputs.Count - 1);
 
-                for (var i = 0; i < 5; i++)
-                {
-                    var push = _inputs[_maxDelay[i]];
-                    position[i].transform.position = push.pos;
-                    position[i].lookingPos.localPosition = push.lookingPos;
-                }
-
-                _inputs.Insert(0, input);
+            for (var i = 0; i < 5; i++)
+            {
+                var push = _inputs[_maxDelay[i]];
+                child[i].transform.position = push.pos;
+                child[i].lookingPos.localPosition = push.lookingPos;
             }
+
+            _inputs.Insert(0, input);
         }
 
         private void GroundCheck()
@@ -232,7 +230,14 @@ namespace MyFolder.Script
             _mask = ~_mask;
             var hit = Physics.BoxCast(startPos, halfExtents, Vector3.down, out var hitInfo,
                 Quaternion.Euler(0, _gizrot, 0), boxstate.y - test, _mask);
-
+            
+            if (hit) {
+                Debug.Log(hitInfo.collider);
+            } else {
+                Debug.Log("No collider was hit");
+            }
+            
+            
             _planeNormal = hitInfo.normal;
             _slopVec = SlopeVec(_planeNormal);
 
@@ -240,7 +245,7 @@ namespace MyFolder.Script
 
             if (hit)
             {
-                if (angle < 65)
+                if (angle < 48)
                 {
                     onGround = true;
                     _rb.useGravity = false;
@@ -267,7 +272,7 @@ namespace MyFolder.Script
 
             moveVec = moveVec.normalized;
 
-
+           // Vector3 tempVec = moveVec;////
             _needleRot = moveVec; // 바늘 회전
 
             // 경사로를 움직이고 있을 때
@@ -279,12 +284,14 @@ namespace MyFolder.Script
 
                 moveVec = horizonForceVec + downVec;
                 moveVec = moveVec.normalized;
+             //   moveVec = tempVec; ////
             }
             else
             {
                 moveVec.y = _rb.velocity.y / speed;
             }
 
+            
             moveVec *= speed;
 
             if (wallContact)
@@ -454,7 +461,6 @@ namespace MyFolder.Script
 
         public Child[] child;
         private readonly List<RbV3> _inputs = new();
-        public Leader[] position;
         private readonly int[] _maxDelay = { 3, 8, 13, 18, 23, 24 };
 
         private struct RbV3

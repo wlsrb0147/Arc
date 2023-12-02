@@ -1,11 +1,6 @@
-using System;
+
 using System.Collections.Generic;
-using JetBrains.Annotations;
-using TMPro.EditorUtilities;
-using Unity.Collections;
-using Unity.VisualScripting.Dependencies.NCalc;
 using UnityEngine;
-using UnityEngine.Serialization;
 using UnityEngine.UI;
 using Random = UnityEngine.Random;
 
@@ -339,11 +334,13 @@ namespace MyFolder.Script.InventoryScript
         {
             if (stat > 0)
             {
-                upAndDownValue[i].text = stat.ToString();
+                upAndDownValue[i].text = "+" + stat;
+                upAndDownValue[i].color = Color.red;
             }
             else if (stat < 0)
             {
                 upAndDownValue[i].text = stat.ToString();
+                upAndDownValue[i].color = Color.blue;
             }
             else
             {
