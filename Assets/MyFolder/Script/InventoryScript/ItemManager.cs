@@ -707,7 +707,7 @@ namespace MyFolder.Script.InventoryScript
             bool IsGlove()
             {
                 var i = equippedItems[charIndex][_itemType2Int[ItemType.Accessory]];
-                if (i == null) return false;
+                if (!i) return false;
                 return i.itemType is ItemType.Gloves;
             }
         }
