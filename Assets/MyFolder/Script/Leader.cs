@@ -52,8 +52,9 @@ namespace MyFolder.Script
 
 
             if (collision.gameObject.CompareTag("Telephote")) transform.position = new Vector3(-18f, 38.6f, 16f);
-
-            if (180 - angleWithUp <= 115)
+            
+            
+            if ( 48  <= angleWithUp)
             {
                 wallContact = true;
                 _wallCollisions.Add(collision.gameObject.name);
@@ -156,7 +157,6 @@ namespace MyFolder.Script
                 }
 
                 if (Input.GetMouseButtonDown(1)) Jump();
-                ////////////////////////////////////////////////////////////////////////////////////////////// jump 실행 후, dequeue all
             }
             else
             {
@@ -232,13 +232,6 @@ namespace MyFolder.Script
             var hit = Physics.BoxCast(startPos, halfExtents, Vector3.down, out var hitInfo,
                 Quaternion.Euler(0, _gizrot, 0), boxstate.y - LengthOfGroundCheck, _mask);
             
-            if (hit) {
-                Debug.Log(hitInfo.collider);
-            } else {
-                Debug.Log("No collider was hit");
-            }
-            
-            
             _planeNormal = hitInfo.normal;
             _slopVec = SlopeVec(_planeNormal);
 
@@ -249,11 +242,13 @@ namespace MyFolder.Script
                 if (angle < 48)
                 {
                     onGround = true;
+                    wallContact = false;
                     _rb.useGravity = false;
                 }
                 else
                 {
                     onGround = false;
+                    wallContact = transform;
                     _rb.useGravity = true;
                 }
             }
@@ -273,9 +268,10 @@ namespace MyFolder.Script
 
             moveVec = moveVec.normalized;
 
-           // Vector3 tempVec = moveVec;////
             _needleRot = moveVec; // 바늘 회전
 
+            
+            
             // 경사로를 움직이고 있을 때
             if (Vector3.Dot(moveVec, _slopVec) != 0 && onGround)
             {
@@ -285,13 +281,11 @@ namespace MyFolder.Script
 
                 moveVec = horizonForceVec + downVec;
                 moveVec = moveVec.normalized;
-             //   moveVec = tempVec; ////
             }
             else
             {
                 moveVec.y = _rb.velocity.y / speed;
             }
-
             
             moveVec *= speed;
 
