@@ -52,6 +52,7 @@ namespace MyFolder.Script
 
 
             if (collision.gameObject.CompareTag("Telephote")) transform.position = new Vector3(-18f, 38.6f, 16f);
+            if (collision.gameObject.CompareTag("Telephote2")) transform.position = new Vector3(11f, 8f, -20f);
             
             
             if ( 48  <= angleWithUp)
@@ -248,7 +249,7 @@ namespace MyFolder.Script
                 else
                 {
                     onGround = false;
-                    wallContact = transform;
+                    wallContact = true;
                     _rb.useGravity = true;
                 }
             }
@@ -334,8 +335,12 @@ namespace MyFolder.Script
             }
             else
             {
-                var temp = _rb.velocity + Time.fixedDeltaTime * scaledVec;
-                temp.y = -12;
+                Vector3 temp;
+                if (float.IsNaN(scaledVec.x) || float.IsNaN(scaledVec.z) )
+                { temp = _rb.velocity + Time.fixedDeltaTime * scaledVec; }
+                
+                else { temp = _rb.velocity; }
+                temp.y = -12f;
                 _rb.velocity = temp;
             }
         }

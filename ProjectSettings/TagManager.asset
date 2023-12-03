@@ -10,6 +10,7 @@ TagManager:
   - DB
   - Inven
   - Scroll
+  - Telephote2
   layers:
   - Default
   - TransparentFX
