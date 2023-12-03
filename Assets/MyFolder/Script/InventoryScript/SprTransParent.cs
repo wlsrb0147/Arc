@@ -17,7 +17,7 @@ namespace MyFolder.Script.InventoryScript
         void Update()
         {
             _spr = _img.sprite;
-            _img.color = _spr == null ? Color.clear : Color.white;
+            _img.color = !_spr ? Color.clear : Color.white;
         }
     }
 }

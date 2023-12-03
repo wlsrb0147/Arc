@@ -6,8 +6,8 @@ namespace MyFolder.Script
 {
     public class Leader : MonoBehaviour
     {
-        [FormerlySerializedAs("test")] public float LengthOfGroundCheck;
-
+        public float LengthOfGroundCheck;
+        
         private readonly float _gravity = -39.24f;
 
         private void Awake()
@@ -53,9 +53,9 @@ namespace MyFolder.Script
 
             if (collision.gameObject.CompareTag("Telephote")) transform.position = new Vector3(-18f, 38.6f, 16f);
             if (collision.gameObject.CompareTag("Telephote2")) transform.position = new Vector3(11f, 8f, -20f);
-            
-            
-            if ( 48  <= angleWithUp)
+
+
+            if (48 <= angleWithUp)
             {
                 wallContact = true;
                 _wallCollisions.Add(collision.gameObject.name);
@@ -243,7 +243,6 @@ namespace MyFolder.Script
                 if (angle < 48)
                 {
                     onGround = true;
-                    wallContact = false;
                     _rb.useGravity = false;
                 }
                 else
@@ -251,6 +250,7 @@ namespace MyFolder.Script
                     onGround = false;
                     wallContact = true;
                     _rb.useGravity = true;
+                    _wallCollisions.Add(hitInfo.collider.gameObject.name);
                 }
             }
             else

@@ -51,7 +51,7 @@ namespace MyFolder.Script.InventoryScript
     
         private void Awake()
         {
-            if (instance == null)
+            if (!instance)
                 instance = this;
             else
                 Destroy(gameObject);
@@ -388,7 +388,7 @@ namespace MyFolder.Script.InventoryScript
             CharacterType currentCharacter = UI_Manager.instance.GetType(Inventory.selectFaceName);
             int charIndex = _charType2Int[currentCharacter];
             
-            return equippedItems[charIndex][x]!=null 
+            return equippedItems[charIndex][x]
                    && equippedItems[charIndex][x].itemType is ItemType.BothHand or ItemType.Gloves;
         }
         
@@ -652,7 +652,7 @@ namespace MyFolder.Script.InventoryScript
                     }
                     else
                     {
-                        if (equippedItems[charIndex][itemIndex] == null)
+                        if (equippedItems[charIndex][itemIndex])
                         {
                             equippedItems[charIndex][itemIndex] = items;
                         }
@@ -700,7 +700,7 @@ namespace MyFolder.Script.InventoryScript
             bool IsBothHand()
             {
                 var i = equippedItems[charIndex][_itemType2Int[ItemType.Weapon]];
-                if (i == null) return false;
+                if (i) return false;
                 return i.itemType is ItemType.BothHand;
             }
 
@@ -718,11 +718,11 @@ namespace MyFolder.Script.InventoryScript
             var charIndex = _charType2Int[currentCharacter];
             var equipItem = equippedItems[charIndex][index];
 
-            if (equipItem is null) return;
+            if (!equipItem) return;
 
             var item = inventoryItems.Find(i => i == equipItem);
 
-            if (item == null)
+            if (!item)
             {
                 inventoryItems.Add(equipItem);
                 equipItem.quantity = 1;
@@ -745,7 +745,7 @@ namespace MyFolder.Script.InventoryScript
             {
                 var x = index is 1 or 5 ? 1 : 6;
                 Items equipItem = equippedItems[charIndex][x];
-                dual = equipItem != null && equipItem.itemType is ItemType.BothHand or ItemType.Gloves;
+                dual = equipItem && equipItem.itemType is ItemType.BothHand or ItemType.Gloves;
             }
             return dual;
         }
