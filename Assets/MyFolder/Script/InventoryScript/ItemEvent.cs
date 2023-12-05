@@ -15,6 +15,7 @@ namespace MyFolder.Script.InventoryScript
         private Text _text1;
         private Text _text2;
         private Color _color;
+        private string _name;
 
         private void Awake()
         {
@@ -25,6 +26,7 @@ namespace MyFolder.Script.InventoryScript
         private void Start()
         {
             _color = _text1.color;
+            _name = name;
         }
 
         public void OnPointerEnter(PointerEventData eventData)
@@ -41,17 +43,15 @@ namespace MyFolder.Script.InventoryScript
         
         public void OnPointerClick(PointerEventData eventData)
         {
-            InventoryCommander.instance.SelectedInvenItemName = gameObject.name;
-            
             switch (eventData.button) // 인벤토리 아이템 클릭
             {
                 case PointerEventData.InputButton.Left:
                 {
                     if (Time.unscaledTime - _timer < 0.5f)
-                        InventoryCommander.instance.ClickType(ClickType.DoubleLeftClick, false);
+                        InventoryCommander.instance.ClickType(ClickType.DoubleLeftClick, _name);
                     else
                     {
-                        InventoryCommander.instance.ClickType(ClickType.LeftClick, false);
+                        InventoryCommander.instance.ClickType(ClickType.LeftClick, _name);
                     }
 
                     _timer = Time.unscaledTime;
@@ -59,7 +59,7 @@ namespace MyFolder.Script.InventoryScript
                 }
 
                 case PointerEventData.InputButton.Right:
-                    InventoryCommander.instance.ClickType(ClickType.RightClick, false);
+                    InventoryCommander.instance.ClickType(ClickType.RightClick, _name);
                     break;
             }
             

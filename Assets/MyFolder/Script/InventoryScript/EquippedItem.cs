@@ -9,7 +9,7 @@ namespace MyFolder.Script.InventoryScript
     public class EquippedItem : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler, IPointerClickHandler
     {
         private float _timer;
-        private int _x;
+        private int _itemSlot;
 
         private void OnEnable()
         {
@@ -18,7 +18,7 @@ namespace MyFolder.Script.InventoryScript
 
         private void Start()
         {
-            _x = gameObject.name switch
+            _itemSlot = name switch
             {
                 "Helmet" => 0,
                 "Weapon" => 1,
@@ -28,41 +28,40 @@ namespace MyFolder.Script.InventoryScript
                 "Shield" => 5,
                 "Accessory1" => 6,
                 "Accessory2" => 7,
-                _ => _x
+                _ => _itemSlot
             };
         }
 
         public void OnPointerEnter(PointerEventData eventData)
         {
-            InventoryCommander.instance.HandleSlotTextColor(true,_x);
+            InventoryCommander.instance.HandleSlotTextColor(true,_itemSlot);
         }
 
         public void OnPointerExit(PointerEventData eventData)
         {
-            InventoryCommander.instance.HandleSlotTextColor(false,_x);
+            InventoryCommander.instance.HandleSlotTextColor(false,_itemSlot);
         }
         
         public void OnPointerClick(PointerEventData eventData)
         {
-            InventoryCommander.instance.ItemSlot = _x;
             switch (eventData.button) // 인벤토리 아이템 클릭
             {
                 case PointerEventData.InputButton.Left:
                 {
                     if (Time.unscaledTime - _timer < 0.5f)
                     {
-                        InventoryCommander.instance.ClickType(ClickType.DoubleLeftClick, true);
+                        InventoryCommander.instance.ClickType(ClickType.DoubleLeftClick, _itemSlot);
                     }
                     else
                     {
-                        InventoryCommander.instance.ClickType(ClickType.LeftClick, true);
+                        InventoryCommander.instance.ClickType(ClickType.LeftClick, _itemSlot);
                     }
                     _timer = Time.unscaledTime;
                     break;
                 }
 
                 case PointerEventData.InputButton.Right:
-                    InventoryCommander.instance.ClickType(ClickType.RightClick, true);
+                    InventoryCommander.instance.ClickType(ClickType.RightClick, _itemSlot);
                     break;
             }
         }

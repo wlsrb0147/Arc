@@ -9,24 +9,27 @@ namespace MyFolder.Script.InventoryScript
     {
         private float _timer;
         private bool asd = false;
-        
+        private string _name;
+        private void Start()
+        {
+            _name = name;
+        }
+
         public void OnPointerClick(PointerEventData eventData)
         {
-            InventoryCommander.instance.SelectedInvenItemName = gameObject.name;
-
             switch (eventData.button)
             {
                 case PointerEventData.InputButton.Left:
                 {
                     if (Time.unscaledTime - _timer < 0.5f)
                     {
-                        InventoryCommander.instance.BookmarkCommand();
+                        InventoryCommander.instance.BookmarkCommand(_name);
                     }
                     _timer = Time.unscaledTime;
                     break;
                 }
                 case PointerEventData.InputButton.Right:
-                    InventoryCommander.instance.BookmarkCommand();
+                    InventoryCommander.instance.BookmarkCommand(_name);
                     break;
             }
         }

@@ -6,13 +6,10 @@ namespace MyFolder.Script.InventoryScript
     public class InventoryCommander : MonoBehaviour
     {
         public static InventoryCommander instance;
-        public int ItemSlot { get; set; }
-        public string SelectedInvenItemName { get; set; }
-
         
         private void Awake()
         {
-            if (instance == null)
+            if (!instance)
                 instance = this;
             else
                 Destroy(gameObject);
@@ -66,46 +63,45 @@ namespace MyFolder.Script.InventoryScript
         {
             ItemManager.instance.SaveCurrentOn();
         }
-        
-        public void BookmarkCommand()
+
+        public void BookmarkCommand(string itemName)
         {
-            ItemManager.instance.ToggleItem(SelectedInvenItemName);
+            ItemManager.instance.ToggleItem(itemName);
             ItemManager.instance.RefreshItem();
         }
-        
-        public void ClickType(ClickType clickType,bool isEquipped)
+
+
+        public void ClickType(ClickType clickType, int itemSlot)
         {
             Reset();
-            
-            if (isEquipped) // true면 장착 아이템 클릭
+            switch (clickType)
             {
-                switch (clickType)
-                {
-                    case InventoryScript.ClickType.LeftClick:
-                        ItemManager.instance.EquippedItemSelect(ItemSlot);
-                        ItemManager.instance.CalculateItemValue(ItemSlot);
-                        break;
-                    case InventoryScript.ClickType.RightClick:
-                    case InventoryScript.ClickType.DoubleLeftClick:
-                        ItemManager.instance.UnequipItemBySlot(ItemSlot);
-                        UI_Manager.instance.isSomethingChanged = true;
-                        break;
-                }
+                case InventoryScript.ClickType.LeftClick:
+                    ItemManager.instance.EquippedItemSelect(itemSlot);
+                    ItemManager.instance.CalculateItemValue(itemSlot);
+                    break;
+                case InventoryScript.ClickType.RightClick:
+                case InventoryScript.ClickType.DoubleLeftClick:
+                    ItemManager.instance.UnequipItemBySlot(itemSlot);
+                    UI_Manager.instance.isSomethingChanged = true;
+                    break;
             }
-            else
+        }
+        
+        public void ClickType(ClickType clickType, string itemName)
+        {
+            Reset();
+            switch (clickType)
             {
-                switch (clickType)
-                {
-                    case InventoryScript.ClickType.LeftClick:
-                        ItemManager.instance.InvenSelectItemCheck(SelectedInvenItemName);
-                        ItemManager.instance.CalculateItemValue(SelectedInvenItemName);
-                        break;
-                    case InventoryScript.ClickType.RightClick:
-                    case InventoryScript.ClickType.DoubleLeftClick:
-                        ItemManager.instance.ChangeItem(SelectedInvenItemName);
-                        UI_Manager.instance.isSomethingChanged = true;
-                        break;
-                }
+                case InventoryScript.ClickType.LeftClick:
+                    ItemManager.instance.InvenSelectItemCheck(itemName);
+                    ItemManager.instance.CalculateItemValue(itemName);
+                    break;
+                case InventoryScript.ClickType.RightClick:
+                case InventoryScript.ClickType.DoubleLeftClick:
+                    ItemManager.instance.ChangeItem(itemName);
+                    UI_Manager.instance.isSomethingChanged = true;
+                    break;
             }
         }
 
