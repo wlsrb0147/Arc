@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0ec43064-8ed8-4326-9813-392b95e1259a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.ArcURP/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/MyFolder/Script/InventoryScript/ItemManager.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -213,7 +212,7 @@
       <workItem from="1701521127357" duration="597000" />
       <workItem from="1701606967375" duration="7139000" />
       <workItem from="1701632606943" duration="2328000" />
-      <workItem from="1701781353238" duration="4939000" />
+      <workItem from="1701781353238" duration="5275000" />
     </task>
     <servers />
   </component>

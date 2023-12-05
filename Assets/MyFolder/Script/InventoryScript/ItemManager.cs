@@ -293,46 +293,34 @@ namespace MyFolder.Script.InventoryScript
             }
 
             int[] stat = new int[6];
-
-            if (equippedItem1 && equippedItem2)
+            
+            stat[0] = selectedItem.barrier;
+            stat[1] = selectedItem.attribute.Str;
+            stat[2] = selectedItem.attribute.Vit;
+            stat[3] = selectedItem.attribute.Agi;
+            stat[4] = selectedItem.attribute.Int;
+            stat[5] = selectedItem.attribute.Luk;
+            
+            if (equippedItem1)
             {
-                stat[0] = selectedItem.barrier - equippedItem1.barrier - equippedItem2.barrier;
-                stat[1] = selectedItem.attribute.Str - equippedItem1.attribute.Str - equippedItem2.attribute.Str;
-                stat[2] = selectedItem.attribute.Vit - equippedItem1.attribute.Vit - equippedItem2.attribute.Vit;
-                stat[3] = selectedItem.attribute.Agi - equippedItem1.attribute.Agi - equippedItem2.attribute.Agi;
-                stat[4] = selectedItem.attribute.Int - equippedItem1.attribute.Int - equippedItem2.attribute.Int;
-                stat[5] = selectedItem.attribute.Luk - equippedItem1.attribute.Luk - equippedItem2.attribute.Luk;
-            }
-            else if (equippedItem2)
-            {
-                stat[0] = selectedItem.barrier - equippedItem2.barrier;
-                stat[1] = selectedItem.attribute.Str - equippedItem2.attribute.Str;
-                stat[2] = selectedItem.attribute.Vit - equippedItem2.attribute.Vit;
-                stat[3] = selectedItem.attribute.Agi - equippedItem2.attribute.Agi;
-                stat[4] = selectedItem.attribute.Int - equippedItem2.attribute.Int;
-                stat[5] = selectedItem.attribute.Luk - equippedItem2.attribute.Luk;
-            }
-            else if (equippedItem1)
-            {
-                stat[0] = selectedItem.barrier - equippedItem1.barrier;
-                stat[1] = selectedItem.attribute.Str - equippedItem1.attribute.Str;
-                stat[2] = selectedItem.attribute.Vit - equippedItem1.attribute.Vit;
-                stat[3] = selectedItem.attribute.Agi - equippedItem1.attribute.Agi;
-                stat[4] = selectedItem.attribute.Int - equippedItem1.attribute.Int;
-                stat[5] = selectedItem.attribute.Luk - equippedItem1.attribute.Luk;
-            }
-            else
-            {
-                stat[0] = selectedItem.barrier;
-                stat[1] = selectedItem.attribute.Str;
-                stat[2] = selectedItem.attribute.Vit;
-                stat[3] = selectedItem.attribute.Agi;
-                stat[4] = selectedItem.attribute.Int;
-                stat[5] = selectedItem.attribute.Luk;
+                stat[0] -= equippedItem1.barrier;
+                stat[1] -= equippedItem1.attribute.Str;
+                stat[2] -= equippedItem1.attribute.Vit;
+                stat[3] -= equippedItem1.attribute.Agi;
+                stat[4] -= equippedItem1.attribute.Int;
+                stat[5] -= equippedItem1.attribute.Luk;
             }
             
+            if (equippedItem2)
+            {
+                stat[0] -= equippedItem2.barrier;
+                stat[1] -= equippedItem2.attribute.Str;
+                stat[2] -= equippedItem2.attribute.Vit;
+                stat[3] -= equippedItem2.attribute.Agi;
+                stat[4] -= equippedItem2.attribute.Int;
+                stat[5] -= equippedItem2.attribute.Luk;
+            }
             
-
             for (int i = 0; i < 6; i++)
             {
                 SetStat(i,stat[i]);
