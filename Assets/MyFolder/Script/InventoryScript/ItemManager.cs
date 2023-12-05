@@ -294,7 +294,7 @@ namespace MyFolder.Script.InventoryScript
 
             int[] stat = new int[6];
 
-            if (equippedItem2)
+            if (equippedItem1 && equippedItem2)
             {
                 stat[0] = selectedItem.barrier - equippedItem1.barrier - equippedItem2.barrier;
                 stat[1] = selectedItem.attribute.Str - equippedItem1.attribute.Str - equippedItem2.attribute.Str;
@@ -302,6 +302,15 @@ namespace MyFolder.Script.InventoryScript
                 stat[3] = selectedItem.attribute.Agi - equippedItem1.attribute.Agi - equippedItem2.attribute.Agi;
                 stat[4] = selectedItem.attribute.Int - equippedItem1.attribute.Int - equippedItem2.attribute.Int;
                 stat[5] = selectedItem.attribute.Luk - equippedItem1.attribute.Luk - equippedItem2.attribute.Luk;
+            }
+            else if (equippedItem2)
+            {
+                stat[0] = selectedItem.barrier - equippedItem2.barrier;
+                stat[1] = selectedItem.attribute.Str - equippedItem2.attribute.Str;
+                stat[2] = selectedItem.attribute.Vit - equippedItem2.attribute.Vit;
+                stat[3] = selectedItem.attribute.Agi - equippedItem2.attribute.Agi;
+                stat[4] = selectedItem.attribute.Int - equippedItem2.attribute.Int;
+                stat[5] = selectedItem.attribute.Luk - equippedItem2.attribute.Luk;
             }
             else if (equippedItem1)
             {
@@ -652,7 +661,8 @@ namespace MyFolder.Script.InventoryScript
                     }
                     else
                     {
-                        if (equippedItems[charIndex][itemIndex])
+                        
+                        if (!equippedItems[charIndex][itemIndex])
                         {
                             equippedItems[charIndex][itemIndex] = items;
                         }
@@ -700,7 +710,7 @@ namespace MyFolder.Script.InventoryScript
             bool IsBothHand()
             {
                 var i = equippedItems[charIndex][_itemType2Int[ItemType.Weapon]];
-                if (i) return false;
+                if (!i) return false;
                 return i.itemType is ItemType.BothHand;
             }
 
