@@ -163,6 +163,6 @@
 
 ## 3. 코드/논리 & 깃허브 링크
 
-### 코드/논리 : [https://drive.google.com/file/d/1I7p90s4CDGYjOx7H1kBitVpNOOE7ObBD/view?usp=sharing](https://drive.google.com/file/d/1FakOKOw6Gs066TrbbLMNiBjeX_u-y7Ao/view?usp=sharing)https://drive.google.com/file/d/1FakOKOw6Gs066TrbbLMNiBjeX_u-y7Ao/view?usp=sharing
+### 코드/논리 : https://drive.google.com/file/d/1FakOKOw6Gs066TrbbLMNiBjeX_u-y7Ao/view?usp=sharing
 
 ### 깃허브 : https://github.com/wlsrb0147/Arc
