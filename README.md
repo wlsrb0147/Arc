@@ -13,7 +13,6 @@
 
 3. 기술서 & 깃허브 링크
 
-4. 돌아가기
 
 ## 1. 프로젝트 설명
 
@@ -162,13 +161,8 @@
 
 ![Honeycam 2023-12-04 03-58-50.webp](https://prod-files-secure.s3.us-west-2.amazonaws.com/d6f15c80-0360-4b9c-8d92-2384fa9bb47f/972b4253-e775-488b-b53f-4fccf3112b2c/Honeycam_2023-12-04_03-58-50.webp)
 
-## 3. 기술서 & 깃허브 링크
+## 3. 코드/논리 & 깃허브 링크
 
-### 논리 설명 : https://drive.google.com/file/d/1I7p90s4CDGYjOx7H1kBitVpNOOE7ObBD/view?usp=sharing
+### 코드/논리 : https://drive.google.com/file/d/1I7p90s4CDGYjOx7H1kBitVpNOOE7ObBD/view?usp=sharing
 
 ### 깃허브 : https://github.com/wlsrb0147/Arc
-
-## [4. 돌아가기](https://www.notion.so/7244aaee2b364d909b63aed38148b2fb?pvs=21)
-
-- 아래 링크를 클릭시 포트폴리오 메인화면으로 돌아갑니다
-- [돌아가기](https://www.notion.so/e53bf0d942b646c4ad45fa0abb7c1ed5?pvs=21)
