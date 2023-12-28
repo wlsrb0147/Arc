@@ -9,27 +9,31 @@
 
 1. 프로젝트 설명
 
-2. 기능 시연
+2. 코드/논리 pdf파일
 
-3. 기술서 & 깃허브 링크
+3. 기능 시연
+
+
 
 
 ## 1. 프로젝트 설명
 
 - 2000년에 발매된 게임 Arcturus를 모방한 프로젝트입니다.
-    
     3D환경에서 2D Sprite를 사용한것이 특징입니다.
     
     기본 조작, 인벤토리 및 아이템 필터기능을 구현하였습니다.
     
     움직임의 기준으로, 벽과 바닥은 법선벡터의 각도를 구하여 구분하였고
-    
     경사로의 움직임은 경사로의 기울기 벡터값을 구하여 계산하였습니다.
     
     아이템 정보는 scriptable object를 사용하여 저장하였습니다.
     
+## 2. 코드/논리 링크
 
-## 2. 기능 시연
+### 코드/논리 : https://drive.google.com/file/d/1FakOKOw6Gs066TrbbLMNiBjeX_u-y7Ao/view?usp=sharing
+
+
+## 3. 기능 시연
 
 - 기능 목록
     1. 카메라와 Sprite 조율
@@ -163,9 +167,3 @@
 ### 북마크 기능 활용
 ![Honeycam 2023-12-26 14-28-35](https://github.com/wlsrb0147/Arc/assets/50743287/699bb4f1-f64a-4306-a7d0-0d78580ba973)
 
-
-## 3. 코드/논리 & 깃허브 링크
-
-### 코드/논리 : https://drive.google.com/file/d/1FakOKOw6Gs066TrbbLMNiBjeX_u-y7Ao/view?usp=sharing
-
-### 깃허브 : https://github.com/wlsrb0147/Arc
