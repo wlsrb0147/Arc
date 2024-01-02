@@ -31,7 +31,7 @@
 ## 2. 코드/논리 링크
 
 https://drive.google.com/file/d/1FakOKOw6Gs066TrbbLMNiBjeX_u-y7Ao/view?usp=sharing
-</br목차 포함 8p</br>
+</br>목차 포함 8p</br>
 
 ## 3. 기능 시연
 
