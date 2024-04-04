@@ -32,7 +32,7 @@
 시연영상 </br>
 https://youtu.be/w0WUOJ53-rs </br></br>
 코드/논리 자료 </br> https://drive.google.com/file/d/1FakOKOw6Gs066TrbbLMNiBjeX_u-y7Ao/view?usp=sharing
-</br>목차 포함 8p</br>
+</br><목차 포함 8p)</br>
 
 ## 3. 기능 시연
 
