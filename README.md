@@ -29,9 +29,11 @@
   아이템 정보는 scriptable object를 사용하여 저장하였습니다.
     
 ## 2. 코드/논리 링크 & 시연영상
-시연영상 : https://youtu.be/w0WUOJ53-rs </br></br>
+</br>
 코드/논리 자료 : https://drive.google.com/file/d/1FakOKOw6Gs066TrbbLMNiBjeX_u-y7Ao/view?usp=sharing
-</br>(목차 포함 8p)</br>
+</br>(목차 포함 8p)</br></br>
+
+시연영상 : https://youtu.be/w0WUOJ53-rs </br></br>
 
 ## 3. 기능 시연
 
