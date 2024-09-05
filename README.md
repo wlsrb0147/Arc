@@ -2,9 +2,6 @@
 ![Honeycam 2023-12-26 14-26-40](https://github.com/wlsrb0147/Arc/assets/50743287/fc8caabc-30c2-4ea5-a586-29eb1556cec6)
 
 
-
-### 코드, 논리에 대한 설명은 2번의 pdf파일에 설명되어있습니다.
-
 ## 목차
 
 1. 프로젝트 설명
