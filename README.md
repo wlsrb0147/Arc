@@ -44,6 +44,15 @@
     
 
 ## 기능 시연
+![image](https://github.com/user-attachments/assets/29e42dfa-e069-4b47-87eb-57edacf944b1)
+
+캐릭터 관련 스크립트</br>
+Assets/MyFolder/Script/Leader.cs
+
+캐릭터 스텟 : CharacterManager
+아이템 정보 저장 : ItemDatabase
+인벤토리 정보 : UIManager & InventoryCommander
+아이템 장착 및 스텟 : ItemManager
 
 ### 2-1. 카메라와 Sprite 조율
 ![Honeycam 2023-12-26 14-27-04](https://github.com/wlsrb0147/Arc/assets/50743287/e1d14d52-7ec3-4fb2-b275-5c2f41809743)
